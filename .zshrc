@@ -74,7 +74,6 @@ eval "$(fzf --zsh)"
 # -- Eza (better ls) config --
 alias ls="eza --color=always --long --git --no-filesize --icons=always --no-time --no-user --no-permissions"
 
-
 # -- Zoxide (better cd) config -- 
 eval "$(zoxide init --cmd cd zsh)"
 
