@@ -52,12 +52,18 @@ final_space = true
   [[blocks.segments]]
     type = 'executiontime'
     style = 'plain'
-    foreground = 'p:blue'
+    foreground = 'p:lavender'
     background = ''
     template = '{{ .FormattedMs }}'
 
     [blocks.segments.properties]
-    threshold = 5000
+   
+  [[blocks.segments]]
+    type = 'project'
+    style = 'plain'
+    foreground = 'p:blue' 
+    background = ''
+    template = ' {{ if .Error }}{{ .Error }}{{ else }}{{ if .Version }} {{.Version}}{{ end }} {{ if .Name }}{{ .Name }}{{ end }}{{ end }} '
 
 [[blocks]]
   type = 'prompt'

@@ -44,7 +44,7 @@ zinit snippet OMZP::command-not-found
 
 # load completion
 autoload -U compinit && compinit
-zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}}'
+zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
 zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}"
 
 # load zinit
@@ -75,7 +75,8 @@ eval "$(zoxide init --cmd cd zsh)"
 
 # == aliases ==
 alias c='clear'
-alias neovide='neovide'
+alias nvide='neovide'
+alias dv='cd ~/dev'
 
 #tmux alixes
 alias ta='tmux attach -t'
