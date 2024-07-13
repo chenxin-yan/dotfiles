@@ -75,6 +75,7 @@ eval "$(zoxide init --cmd cd zsh)"
 
 # == aliases ==
 alias c='clear'
+alias neovide='neovide'
 
 #tmux alixes
 alias ta='tmux attach -t'
