@@ -10,6 +10,7 @@ fi
 source "$HOME/.local/share/zinit/zinit.git/zinit.zsh"
 
 # == keybindings ==
+bindkey -v
 bindkey '^p' history-search-backward
 bindkey '^n' history-search-forward
 
@@ -37,13 +38,8 @@ setopt hist_save_no_dups
 setopt hist_ignore_dups
 setopt hist_find_no_dups
 
-# vi-mode support in zsh
-zinit ice depth=1
-zinit light jeffreytse/zsh-vi-mode
-
 # == add snippts using zinit
 zinit snippet OMZP::git
-zinit snippet OMZP::tmux
 zinit snippet OMZP::command-not-found
 
 # load completion
@@ -79,3 +75,10 @@ eval "$(zoxide init --cmd cd zsh)"
 
 # == aliases ==
 alias c='clear'
+
+#tmux alixes
+alias ta='tmux attach -t'
+alias ts='tmux new-session -s'
+alias tl='tmux list-sessions'
+alias tksv='tmux kill-server'
+alias tkss='tmux kill-session -t'

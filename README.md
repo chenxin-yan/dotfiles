@@ -32,8 +32,10 @@ $ stow .
    - `CTRL-R` - Paste the selected command from history onto the command-line
    - `ALT-C` - cd into the selected directory
    - use `**<Tab>` to fuzzy find after command
-4. Session manager: [tmux](https://github.com/tmux/tmux)
+4. install session manager: [tmux](https://github.com/tmux/tmux)
+   - install [tpm](https://github.com/tmux-plugins/tpm)
+   - use `<prefix>I` to install plugins
    - [cheetsheet](https://tmuxcheatsheet.com) for tmux command
-5. editor: neovim
+5. install editor: neovim
    - download my [config](https://github.com/chenxin-yan/nvim)
    - (optional) download nvim GUI: neovide
