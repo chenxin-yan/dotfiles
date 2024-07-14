@@ -28,6 +28,7 @@ $ stow .
 1. install Plugin manager: [zinit](https://github.com/zdharma-continuum/zinit)
 2. install prompt theme engine: [Oh My Posh](https://ohmyposh.dev/docs/installation/macos)
 3. install fuzzy finder: [fzf](https://github.com/junegunn/fzf)
+   - install [fd](https://github.com/sharkdp/fd) to replace find
 4. install session manager: [tmux](https://github.com/tmux/tmux)
    - install [tpm](https://github.com/tmux-plugins/tpm)
    - use `<prefix>I` to install plugins
