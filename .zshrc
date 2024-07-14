@@ -56,9 +56,6 @@ autoload -Uz _zinit
 # homebrew support
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
-# Iterm2 shell integration
-test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
-
 # -- oh-my-posh config -- 
 if [ "$TERM_PROGRAM" != "Apple_Terminal" ]; then
   eval "$(oh-my-posh init zsh --config $HOME/.config/ohmyposh/cyan.omp.toml)"
@@ -78,7 +75,7 @@ alias c='clear'
 alias nvide='neovide'
 alias dv='cd ~/dev'
 
-#tmux alixes
+# tmux alixes
 alias ta='tmux attach -t'
 alias ts='tmux new-session -s'
 alias tl='tmux list-sessions'
