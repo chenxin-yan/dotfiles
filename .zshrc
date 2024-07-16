@@ -97,6 +97,7 @@ eval "$(zoxide init --cmd cd zsh)"
 alias c='clear'
 alias nvide='neovide'
 alias dv='cd ~/dev'
+alias gl='lazygit'
 
 # tmux alixes
 alias ta='tmux attach -t'
