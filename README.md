@@ -38,3 +38,4 @@ $ stow .
    - (optional) download neovide as nvim GUI: [neovide](https://neovide.dev)
 6. install better ls: [Eza](https://github.com/eza-community/eza/blob/main/INSTALL.md)
 7. install better cd: [Zoxicde](https://github.com/ajeetdsouza/zoxide)
+8. install better cat: [Bat](https://github.com/sharkdp/bat)
