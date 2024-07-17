@@ -41,6 +41,7 @@ setopt hist_find_no_dups
 # == add snippts using zinit
 zinit snippet OMZP::git
 zinit snippet OMZP::command-not-found
+zinit snippet OMZP::sudo
 
 # load completion
 autoload -U compinit && compinit
@@ -89,6 +90,7 @@ _fzf_compgen_dir() {
 
 # -- Eza (better ls) config --
 alias ls="eza --color=always --long --git --no-filesize --icons=always --no-time --no-user --no-permissions"
+alias tre="eza -TL 2 --color=always --icons=always"
 
 # -- Zoxide (better cd) config -- 
 eval "$(zoxide init --cmd cd zsh)"
