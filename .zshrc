@@ -123,11 +123,14 @@ eval $(thefuck --alias)
 eval $(thefuck --alias fk)
 
 # == aliases ==
-alias c='clear'
 alias nvide='neovide'
-alias dv='cd ~/dev'
 alias gl='lazygit'
+
+alias c='clear'
 alias lsb='ls -ah | bat'
+alias update='sudo brew update; brew upgrade; brew cleanup'
+
+alias chrome='open -a "Google Chrome"'
 
 # tmux alixes
 alias ta='tmux attach -t'
