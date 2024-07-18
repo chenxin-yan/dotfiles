@@ -10,6 +10,8 @@ fi
 
 source "$HOME/.local/share/zinit/zinit.git/zinit.zsh"
 
+export XDG_CONFIG_HOME="$HOME/.config"
+
 # == keybindings ==
 bindkey -v
 bindkey '^p' history-search-backward
@@ -88,6 +90,7 @@ _fzf_compgen_path() {
 _fzf_compgen_dir() {
   fd --type=d --hidden --exclude .git . "$1"
 }
+
 show_file_or_dir_preview="if [ -d {} ]; then eza --tree --color=always {} | head -200; else bat -n --color=always --line-range :500 {}; fi"
 
 export FZF_CTRL_T_OPTS="--preview '$show_file_or_dir_preview'"
@@ -133,11 +136,17 @@ alias update='sudo brew update; brew upgrade; brew cleanup'
 alias chrome='open -a "Google Chrome"'
 
 # tmux alixes
-alias ta='tmux attach -t'
+alias ta='tmux attach'
+alias tat='tmux attach -t'
 alias ts='tmux new-session -s'
 alias tl='tmux list-sessions'
 alias tksv='tmux kill-server'
 alias tkss='tmux kill-session -t'
 
 # == Scripts ==
-alias obn='~/.local/bin/scripts/obsidian_new_note.sh'
+# Obsidian
+alias obc='~/.local/bin/scripts/obsidian_new_note.sh'
+alias obs='~/.local/bin/scripts/obsidian_search.sh'
+
+# tmux
+alias dv='~/.local/bin/scripts/dev_session.sh'

@@ -1,6 +1,5 @@
 #!/bin/bash
 
-cd ~/Documents/Ideaverse/+\ Inbox
 if [[ $# -eq 0 ]]; then
   echo "Please enter note title"
 else
@@ -9,5 +8,5 @@ else
   do
     FILE_NAME+=" $WORD"
   done
-  $EDITOR "$FILE_NAME.md"
+  $EDITOR "$VAULT_PATH/+ Inbox/$FILE_NAME.md"
 fi
