@@ -1,0 +1,63 @@
+#KeyClu[Window management] Move window focus: Down
+alt - j : yabai -m window --focus south || yabai -m display --focus south
+#KeyClu[Window management] Move window focus: Up
+alt - k : yabai -m window --focus north || yabai -m display --focus north
+#KeyClu[Window management] Move window focus: Left
+alt - h : yabai -m window --focus west || yabai -m display --focus west
+#KeyClu[Window management] Move window focus: Right
+alt - l : yabai -m window --focus east || yabai -m display --focus east 
+
+#KeyClu[Window management] Flip along y-axis
+shift + alt - y : yabai -m space --mirror y-axis
+
+#KeyClu[Window management] Flip along x-axis
+shift + alt - x : yabai -m space --mirror x-axis
+
+#KeyClu[Window management] Toggle window float
+shift + alt - t : yabai -m window --toggle float --grid 4:4:1:1:2:2
+
+#KeyClu[Window management] Maximize window
+shift + alt - m : yabai -m window --toggle zoom-fullscreen
+
+#KeyClu[Window management] Balance out tree of windows
+shift + alt - e : yabai -m space --balance
+
+#KeyClu[Window management] Swap windows: Down
+shift + alt - j : yabai -m window --swap south
+#KeyClu[Window management] Swap windows: Up
+shift + alt - k : yabai -m window --swap north
+#KeyClu[Window management] Swap windows: Left
+shift + alt - h : yabai -m window --swap west
+#KeyClu[Window management] Swap windows: right
+shift + alt - l : yabai -m window --swap east
+
+#KeyClu[Window management] Move window and split: Down
+ctrl + alt - j : yabai -m window --warp south
+#KeyClu[Window management] Move window and split: Up
+ctrl + alt - k : yabai -m window --warp north
+#KeyClu[Window management] Move window and split: Left
+ctrl + alt - h : yabai -m window --warp west
+#KeyClu[Window management] Move window and split: Right
+ctrl + alt - l : yabai -m window --warp east
+
+#KeyClu[Window management] Move window to space: Main
+shift + alt - 0x32 : yabai -m window --space 1;
+#KeyClu[Window management] Move window to space: 1
+shift + alt - 1 : yabai -m window --space 2;
+#KeyClu[Window management] Move window to space: 2
+shift + alt - 2 : yabai -m window --space 3;
+#KeyClu[Window management] Move window to space: 3
+shift + alt - 3 : yabai -m window --space 4;
+#KeyClu[Window management] Move window to space: 4
+shift + alt - 4 : yabai -m window --space 5;
+#KeyClu[Window management] Move window to space: 5
+shift + alt - 5 : yabai -m window --space 6;
+#KeyClu[Window management] Move window to space: 6
+shift + alt - 6 : yabai -m window --space 7;
+
+#KeyClu[Window management] stop yabai
+ctrl + alt - q : yabai --stop-service
+#KeyClu[Window management] start yabai
+ctrl + alt - s : yabai --start-service
+#KeyClu[Window management] restart yabai
+ctrl + alt - r : yabai --restart-service
