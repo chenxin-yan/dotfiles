@@ -60,6 +60,11 @@ autoload -Uz _zinit
 # homebrew support
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
+# setup nvm
+export NVM_DIR="$HOME/.config/nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
 # -- oh-my-posh config -- 
 if [ "$TERM_PROGRAM" != "Apple_Terminal" ]; then
   eval "$(oh-my-posh init zsh --config $HOME/.config/ohmyposh/cyan.omp.toml)"
@@ -128,6 +133,7 @@ eval $(thefuck --alias fk)
 # == aliases ==
 alias nvide='neovide'
 alias gl='lazygit'
+alias vim='nvim'
 
 alias c='clear'
 alias lsb='ls -ah | bat'
@@ -150,3 +156,4 @@ alias obs='~/.local/bin/scripts/obsidian_search.sh'
 
 # tmux
 alias dv='~/.local/bin/scripts/dev_session.sh'
+

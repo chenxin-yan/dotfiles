@@ -36,6 +36,9 @@ $ stow .
 5. install editor: [neovim](https://neovim.io)
    - download my [config](https://github.com/chenxin-yan/nvim)
    - (optional) download neovide as nvim GUI: [neovide](https://neovide.dev)
-6. install better ls: [Eza](https://github.com/eza-community/eza/blob/main/INSTALL.md)
-7. install better cd: [Zoxicde](https://github.com/ajeetdsouza/zoxide)
-8. install better cat: [Bat](https://github.com/sharkdp/bat)
+6. (Optional) install karabiner for key motification
+7. install better ls: [Eza](https://github.com/eza-community/eza/blob/main/INSTALL.md)
+8. install better cd: [Zoxicde](https://github.com/ajeetdsouza/zoxide)
+9. install better cat: [Bat](https://github.com/sharkdp/bat)
+10. Install Window Manager: [Yabai](https://github.com/koekeishiya/yabai)
+    - Install [skhd](https://github.com/koekeishiya/skhd) for window management shortcuts

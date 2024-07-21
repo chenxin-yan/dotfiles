@@ -1,8 +1,5 @@
 #!/bin/bash
 
-# Define the project directory to search in
-PROJECT_DIR=~/dev/
-
 # Use fd to select a top-level directory
 SELECTED_DIR=$(fd --type d --max-depth 1 . "$PROJECT_DIR" | fzf)
 
