@@ -1,3 +1,7 @@
+# time ZSH_DEBUGRC=1 zsh -i -c exit 
+if [ -n "${ZSH_DEBUGRC+1}" ]; then
+    zmodload zsh/zprof
+fi
 
 # init zinit
 if [[ ! -f $HOME/.local/share/zinit/zinit.git/zinit.zsh ]]; then
@@ -59,11 +63,6 @@ autoload -Uz _zinit
 
 # homebrew support
 eval "$(/opt/homebrew/bin/brew shellenv)"
-
-# setup nvm
-export NVM_DIR="$HOME/.config/nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 # -- oh-my-posh config -- 
 if [ "$TERM_PROGRAM" != "Apple_Terminal" ]; then
@@ -157,3 +156,6 @@ alias obs='~/.local/bin/scripts/obsidian_search.sh'
 # tmux
 alias dv='~/.local/bin/scripts/dev_session.sh'
 
+if [ -n "${ZSH_DEBUGRC+1}" ]; then
+    zprof
+fi
