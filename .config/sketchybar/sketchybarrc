@@ -1,0 +1,63 @@
+#!/bin/bash
+
+DIR="$HOME/.config/sketchybar/"
+ITEM_DIR="$DIR/items"
+PLUGIN_DIR="$DIR/plugins"
+
+FONT="JetBrainsMono Nerd Font"
+ICON_FONT="SF Pro"
+
+PADDING=5
+
+source "$DIR/colors.sh"
+source "$DIR/icons.sh"
+
+BAR_PROPS=(
+  height=32
+  color=$BG_PRI_COLR
+  shadow=off
+  position=top
+  sticky=on
+  padding_right=15
+  padding_left=15
+  corner_radius=10
+  y_offset=6
+  margin=6
+  blur_radius=30
+  notch_width=0
+)
+
+DEF_PROPS=(
+  updates=when_shown
+  icon.font="$ICON_FONT:Regular:16.0"
+  icon.color=$WHITE
+  icon.padding_left=$PADDING
+  icon.padding_right=2
+  label.font="$FONT:Bold:14.0"
+  label.color=$WHITE
+  label.padding_left=$PADDING
+  label.padding_right=$PADDING
+  background.color=$BG_PRI_COLOR
+  background.padding_right=$PADDING
+  background.padding_left=$PADDING
+  background.height=22
+  background.corner_radius=5
+)
+
+sketchybar --bar "${BAR_PROPS[@]}"
+sketchybar --default "${DEF_PROPS[@]}"
+
+# -- LEFT Side Items --
+source "$ITEM_DIR/apple.sh"
+source "$ITEM_DIR/spaces.sh"
+source "$ITEM_DIR/front_app.sh"
+
+# -- RIGHT Side Items -- 
+source "$ITEM_DIR/time.sh"
+source "$ITEM_DIR/battery.sh"
+source "$ITEM_DIR/sound.sh"
+source "$ITEM_DIR/cpu.sh"
+
+
+sketchybar --update
+
