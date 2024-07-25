@@ -133,10 +133,11 @@ eval $(thefuck --alias fk)
 alias nvide='neovide'
 alias gl='lazygit'
 alias vim='nvim'
+alias cdv='cd $PROJECT_DIR'
+alias ezsh='exec zsh'
 
 alias c='clear'
 alias lsb='ls -ah | bat'
-alias update='sudo brew update; brew upgrade; brew cleanup'
 
 alias chrome='open -a "Google Chrome"'
 
@@ -159,3 +160,4 @@ alias dv='~/.local/bin/scripts/dev_session.sh'
 if [ -n "${ZSH_DEBUGRC+1}" ]; then
     zprof
 fi
+

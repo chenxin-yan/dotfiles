@@ -6,14 +6,17 @@ yabai -m config --space 1 layout float
 yabai -m config window_placement second_child
 
 # padding
-yabai -m config top_padding 5
-yabai -m config bottom_padding 5
-yabai -m config left_padding 5
-yabai -m config right_padding 5
-yabai -m config window_gap 5
+yabai -m config top_padding 6
+yabai -m config bottom_padding 6
+yabai -m config left_padding 6
+yabai -m config right_padding 6
+yabai -m config window_gap 6
 
 # when window is dropped in center of another window, swap them (on edges it will split it)
 yabai -m mouse_drop_action swap
+
+# account for sketchy bar
+yabai -m config external_bar all:38:0
 
 # List of alls to ignore
 yabai -m rule --add app="^System Settings$" manage=off

@@ -1,5 +1,20 @@
 #!/bin/bash
 
+# Function to clean up tmux sessions without existing folders
+cleanup_sessions() {
+  # List all tmux sessions
+  tmux list-sessions -F "#{session_name}" | while read -r session_name; do
+    session_path="$PROJECT_DIR/$session_name"
+    if [ ! -d "$session_path" ]; then
+      echo "Killing tmux session: $session_name (Folder does not exist)"
+      tmux kill-session -t "$session_name"
+    fi
+  done
+}
+
+# Clean up sessions first
+cleanup_sessions
+
 # Use fd to select a top-level directory
 SELECTED_DIR=$(fd --type d --max-depth 1 . "$PROJECT_DIR" | fzf)
 
