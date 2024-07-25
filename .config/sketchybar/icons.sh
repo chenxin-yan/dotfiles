@@ -2,6 +2,8 @@
 
 export APPLE_ICON=􀣺
 
+export WIFI_CONN_ICON=􀙇
+
 export SOUND_FUL_ICON=􀊩
 export SOUND_HIG_ICON=􀊧
 export SOUND_MID_ICON=􀊥

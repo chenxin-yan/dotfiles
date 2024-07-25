@@ -17,7 +17,6 @@ export BLUE=0xFF89b4fa #89b4fa
 export LAVENDER=0xFFb4befe #b4befe
 
 export WHITE=0xFFcdd6f4 #cdd6f4 
-export ACCENT=$SKY
 
 export BG_PRI_COLR=0xEE1e1e2e #1e1e2e
 export BG_SEC_COLR=0xFF313244 #313244

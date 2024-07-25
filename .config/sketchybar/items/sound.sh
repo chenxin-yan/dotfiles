@@ -1,6 +1,8 @@
 #!/bin/bash
 
 SOUND=(
+  icon.color=$GREEN
+  background.color=$BG_SEC_COLR
   script="$PLUGIN_DIR/sound.sh"
 )
 

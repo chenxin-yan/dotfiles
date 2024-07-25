@@ -3,6 +3,8 @@
 BATTERY=(
   update_freq=120
   icon.font="$ICON_FONT:Regular:20.0"
+  icon.color=$TEAL
+  background.color=$BG_SEC_COLR
   script="$PLUGIN_DIR/battery.sh"
 )
 

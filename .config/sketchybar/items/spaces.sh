@@ -1,22 +1,22 @@
 #!/bin/bash
 
-SPACE_ICONS=("~" "1" "2" "3" "4" "5" "6" "7" "8" "9")
+SPACE_ICONS=("~" "1:DEV" "2:WEB" "3:TODO" "4:CHAT" "5:NOTE" "6:MUSIC" "7" "8" "9")
+
+# SPACE_ICONS=("~" "1:􀩼" "2:􀎬" "3:􀷾" "4:􀌤" "5:􀓕" "6:􀑪" "7" "8" "9")
 
 SPACE=(
-  icon.padding_left=22
-  icon.padding_right=22
+  icon.padding_left=18
+  icon.padding_right=18
   label.padding_right=33
   icon.color=$WHITE
-  icon.font="$FONT:Bold:14.0"
-  icon.highlight_color=$ACCENT
+  icon.font="$FONT:ExtraBold:14.0"
+  icon.highlight_color=$SKY
+  icon.background.draw=on
   background.padding_left=-8
   background.padding_right=-8
   background.color=$BG_SEC_COLR
+  background.corner_radius=10
   background.drawing=on
-  label.background.height=26
-  label.background.drawing=on
-  label.background.color=$BG_SEC_COLR
-  label.background.corner_radius=10
   label.drawing=off
   script="$PLUGIN_DIR/space.sh"
 )
@@ -31,3 +31,10 @@ do
   sketchybar --set space.$sid "${SPACE[@]}"
 done
 
+sketchybar --add item space_separator_left left \
+           --set space_separator_left icon= \
+                                 icon.font="$FONT:Bold:16.0" \
+                                 background.padding_left=16 \
+                                 background.padding_right=12 \
+                                 label.drawing=off \
+                                 icon.color=$BG_SEC_COLR
