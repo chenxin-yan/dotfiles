@@ -22,9 +22,7 @@ yabai -m config external_bar all:38:0
 yabai -m rule --add app="^System Settings$" manage=off
 yabai -m rule --add app="^Karabiner-Elements$" manage=off
 yabai -m rule --add app="^Karabiner-EventViewer$" manage=off
-yabai -m rule --add app="^Notes$" manage=off
 yabai -m rule --add app="^Raycast$" manage=off
-yabai -m rule --add app="^WeChat$" manage=off
-yabai -m rule --add app="^Music$" manage=off
+yabai -m rule --add app="^OBS Studio$" manage=off
 yabai -m rule --add app="^IINA$" manage=off
 

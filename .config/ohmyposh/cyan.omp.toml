@@ -52,7 +52,7 @@ final_space = true
   [[blocks.segments]]
     type = 'executiontime'
     style = 'plain'
-    foreground = 'p:lavender'
+    foreground = 'p:yellow'
     background = ''
     template = '{{ .FormattedMs }}'
 
@@ -98,6 +98,7 @@ final_space = true
 
 [palette]
   blue = '#89B4FA'
+  yellow = '#f9e2af'
   closer = 'p:os'
   lavender = '#B4BEFE'
   os = '#ACB0BE'
