@@ -60,7 +60,8 @@ source "$ITEM_DIR/wifi.sh"
 source "$ITEM_DIR/cpu.sh"
 sketchybar --add item cat center \
            --set cat icon="≽^•⩊•^≼"\
-                     icon.color=$WHITE\
+                     icon.font="$ICON_FONT:Regular:18.0" \
+                     icon.color=$DARK_WHITE\
                      label.draw=off
 
 
