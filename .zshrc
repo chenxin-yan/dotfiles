@@ -133,7 +133,6 @@ eval $(thefuck --alias fk)
 alias nvide='neovide'
 alias gl='lazygit'
 alias vim='nvim'
-alias cdv='cd $PROJECT_DIR'
 alias ezsh='exec zsh'
 
 alias c='clear'
@@ -154,8 +153,9 @@ alias tkss='tmux kill-session -t'
 alias obc='~/.local/bin/scripts/obsidian_new_note.sh'
 alias obs='~/.local/bin/scripts/obsidian_search.sh'
 
-# tmux
+# tmux/dev project
 alias dv='~/.local/bin/scripts/dev_session.sh'
+alias cdv='~/.local/bin/scripts/clone_to_dev.sh'
 
 if [ -n "${ZSH_DEBUGRC+1}" ]; then
     zprof

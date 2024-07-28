@@ -1,5 +1,10 @@
 #!/bin/bash
 
+# Check if the project directory exists, if not, create it
+if [ ! -d "$PROJECT_DIR" ]; then
+  mkdir -p "$PROJECT_DIR"
+fi
+
 # Function to clean up tmux sessions without existing folders
 cleanup_sessions() {
   # List all tmux sessions
