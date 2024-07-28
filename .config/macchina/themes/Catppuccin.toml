@@ -1,0 +1,42 @@
+# Catppuccin theme - sauce for macchina cli
+
+separator = "⊹ ࣪ "
+separator_color = "#89b4fa"
+key_color = "#89b4fa"
+prefer_small_ascii = true
+
+[palette]
+type = "Dark"
+visible = true
+glyph = " ⬤ "
+
+[box]
+title = " ฅ^•⩊•^ฅ "
+border = "double"
+visible = true
+
+[bar]
+glyph = "✿ "
+hide_delimiters = true
+visible = true
+
+[randomize]
+key_color = false
+separator_color = false
+
+[custom_ascii]
+color = "#89b4fa"
+path = "~/dotfiles/.config/macchina/themes/ascii.txt"
+
+[keys]
+host = " host"
+machine = '󱤓 machine'
+kernel = " kernel"
+os = " os"
+packages = " packages"
+terminal = " terminal"
+shell = " shell"
+cpu = " cpu"
+cpu_load = "󰈸 cpu %"
+memory = "󰍛 memory %"
+battery = "󰂄 battery %"

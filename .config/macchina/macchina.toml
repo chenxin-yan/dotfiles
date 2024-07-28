@@ -1,0 +1,16 @@
+show = [
+  "Host",
+  "Machine",
+  "Kernel",
+  "OperatingSystem",
+  "Packages",
+  "Terminal",
+  "Shell",
+  "Processor",
+  "ProcessorLoad",
+  "Memory",
+  "Battery",
+]
+
+
+theme = "Catppuccin"
