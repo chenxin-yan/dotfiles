@@ -134,6 +134,7 @@ alias nvide='neovide'
 alias gl='lazygit'
 alias vim='nvim'
 alias ezsh='exec zsh'
+alias ovo='Macchina'
 
 alias c='clear'
 alias lsb='ls -ah | bat'
@@ -155,7 +156,8 @@ alias obs='~/.local/bin/scripts/obsidian_search.sh'
 
 # tmux/dev project
 alias dv='~/.local/bin/scripts/dev_session.sh'
-alias cdv='~/.local/bin/scripts/clone_to_dev.sh'
+alias dvc='~/.local/bin/scripts/dev_clone.sh'
+alias dvrm='~/.local/bin/scripts/dev_remove.sh'
 
 if [ -n "${ZSH_DEBUGRC+1}" ]; then
     zprof
