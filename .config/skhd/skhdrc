@@ -7,11 +7,8 @@ alt - h : yabai -m window --focus west || yabai -m display --focus west
 #KeyClu[Window management] Move window focus: Right
 alt - l : yabai -m window --focus east || yabai -m display --focus east 
 
-#KeyClu[Window management] Flip along y-axis
-shift + alt - y : yabai -m space --mirror y-axis
-
-#KeyClu[Window management] Flip along x-axis
-shift + alt - x : yabai -m space --mirror x-axis
+#KeyClu[Window management] Rotate windows
+shift + alt - r : yabai -m space --rotate 90
 
 #KeyClu[Window management] Toggle window float
 shift + alt - t : yabai -m window --toggle float --grid 4:4:1:1:2:2
@@ -32,13 +29,13 @@ shift + alt - h : yabai -m window --swap west
 shift + alt - l : yabai -m window --swap east
 
 #KeyClu[Window management] Move window and split: Down
-ctrl + alt - j : yabai -m window --warp south
+shift + alt + ctrl - j : yabai -m window --warp south
 #KeyClu[Window management] Move window and split: Up
-ctrl + alt - k : yabai -m window --warp north
+shift + alt + ctrl - k : yabai -m window --warp north
 #KeyClu[Window management] Move window and split: Left
-ctrl + alt - h : yabai -m window --warp west
+shift + alt + ctrl - h : yabai -m window --warp west
 #KeyClu[Window management] Move window and split: Right
-ctrl + alt - l : yabai -m window --warp east
+shift + alt + ctrl - l : yabai -m window --warp east
 
 #KeyClu[Window management] Move window to space: Main
 shift + alt - 0x32 : yabai -m window --space 1;
