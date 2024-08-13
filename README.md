@@ -47,4 +47,5 @@ stow .
 12. install [sketchybar](https://felixkratz.github.io/SketchyBar/setup)
     - install [SF Symbals](https://developer.apple.com/sf-symbols/) for macos native symbals
     - install [sketchybar-app-font](https://github.com/kvndrsslr/sketchybar-app-font)
-13. (Optional) Install system infor fetcher: [macchina](https://github.com/Macchina-CLI/macchina)
+13. install terminal file explorer: [yazi](https://yazi-rs.github.io)
+14. (Optional) Install system info fetcher: [macchina](https://github.com/Macchina-CLI/macchina)

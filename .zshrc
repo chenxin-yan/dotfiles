@@ -132,8 +132,8 @@ eval $(thefuck --alias fk)
 # == aliases ==
 alias nvide='neovide'
 alias G='lazygit'
-alias vim='nvim'
-alias ezsh='exec zsh'
+alias v='nvim'
+alias e='yazi'
 alias ovo='Macchina'
 alias Leet='nvim Leetcode.nvim'
 
