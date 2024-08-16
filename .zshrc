@@ -133,9 +133,8 @@ eval $(thefuck --alias fk)
 alias nvide='neovide'
 alias G='lazygit'
 alias v='nvim'
-alias e='yazi'
-alias ovo='Macchina'
 alias Leet='nvim Leetcode.nvim'
+alias ovo='Macchina'
 
 alias c='clear'
 alias lsb='ls -ah | bat'
@@ -164,3 +163,12 @@ if [ -n "${ZSH_DEBUGRC+1}" ]; then
     zprof
 fi
 
+# Yazi
+function e() {
+  local tmp="$(mktemp -t "yazi-cwd.XXXXXX")"
+  yazi "$@" --cwd-file="$tmp"
+  if cwd="$(cat -- "$tmp")" && [ -n "$cwd" ] && [ "$cwd" != "$PWD" ]; then
+    builtin cd -- "$cwd"
+  fi
+  rm -f -- "$tmp"
+}

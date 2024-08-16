@@ -20,6 +20,7 @@ yabai -m config external_bar all:38:0
 
 # List of alls to ignore
 yabai -m rule --add app="^System Settings$" manage=off
+yabai -m rule --add app="^Finder$" manage=off
 yabai -m rule --add app="^Karabiner-Elements$" manage=off
 yabai -m rule --add app="^Karabiner-EventViewer$" manage=off
 yabai -m rule --add app="^Raycast$" manage=off

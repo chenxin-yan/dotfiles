@@ -216,6 +216,10 @@ keymap = [
   ], run = "cd ~/Desktop/", desc = "Go to the desktop directory" },
   { on = [
     "g",
+    "v",
+  ], run = "cd ~/dev/", desc = "Go to the development directory" },
+  { on = [
+    "g",
     "<Space>",
   ], run = "cd --interactive", desc = "Go to a directory interactively" },
 
