@@ -159,9 +159,9 @@ alias dv='~/.local/bin/scripts/dev_session.sh'
 alias dvc='~/.local/bin/scripts/dev_clone.sh'
 alias dvrm='~/.local/bin/scripts/dev_remove.sh'
 
-if [ -n "${ZSH_DEBUGRC+1}" ]; then
-    zprof
-fi
+# general proejcts
+alias cpj='cd $PROJECT_DIR'
+alias pj='. ~/.local/bin/scripts/projects_cd.sh'
 
 # Yazi
 function e() {
@@ -172,3 +172,7 @@ function e() {
   fi
   rm -f -- "$tmp"
 }
+
+if [ -n "${ZSH_DEBUGRC+1}" ]; then
+    zprof
+fi

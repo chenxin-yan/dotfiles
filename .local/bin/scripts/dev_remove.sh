@@ -2,13 +2,13 @@
 
 
 # Check if the project directory exists
-if [ ! -d "$PROJECT_DIR" ]; then
-  echo "Project directory does not exist: $PROJECT_DIR"
+if [ ! -d "$DEV_DIR" ]; then
+  echo "Project directory does not exist: $DEV_DIR"
   exit 1
 fi
 
 # Use fd to select a top-level directory
-SELECTED_DIR=$(fd --type d -L --max-depth 1 . "$PROJECT_DIR" | fzf --prompt="Select a project to delete: ")
+SELECTED_DIR=$(fd --type d -L --max-depth 1 . "$DEV_DIR" | fzf --prompt="Select a project to delete: ")
 
 # Check if a directory was selected
 if [ -n "$SELECTED_DIR" ]; then
