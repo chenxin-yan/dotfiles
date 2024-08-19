@@ -162,6 +162,7 @@ alias dvrm='~/.local/bin/scripts/dev_remove.sh'
 # general proejcts
 alias cpj='cd $PROJECT_DIR'
 alias pj='. ~/.local/bin/scripts/projects_cd.sh'
+alias area='. ~/.local/bin/scripts/areas_cd.sh'
 
 # Yazi
 function e() {

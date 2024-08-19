@@ -9,4 +9,4 @@ export VAULT_PATH=~/Documents/Ideaverse/
 
 export DEV_DIR=~/dev/
 
-export PROJECT_DIR=/Users/yanchenxin/Library/Mobile\ Documents/com~apple~CloudDocs/PARA\ System/Projects
+export PARA_DIR=/Users/yanchenxin/Library/Mobile\ Documents/com~apple~CloudDocs/PARA

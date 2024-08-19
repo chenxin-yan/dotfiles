@@ -1,22 +1,20 @@
-#!/bin/bash
+#!/usr/bin/osascript
 
 # Required parameters:
 # @raycast.schemaVersion 1
 # @raycast.title New Safari Window
-# @raycast.mode compact
+# @raycast.mode silent
 
 # Optional parameters:
 # @raycast.icon 🧭
-# @raycast.packageName NewWindow
+# @raycast.packageName New Window Command
 
 # Documentation:
-# @raycast.description Create a new safari window
+# @raycast.description Create new Safari window
 # @raycast.author chenxin_yan
 # @raycast.authorURL https://raycast.com/chenxin_yan
 
-osascript <<EOF
 tell application "Safari"
     make new document
     activate
 end tell
-EOF
