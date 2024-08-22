@@ -47,8 +47,6 @@ if frontApp is "iTerm2" then
         tell application "System Events"
             keystroke "a" using {command down} -- Select all text
             keystroke "v" using {command down} -- Paste clipboard content
-            delay 0.2
-            key code 51
         end tell
     end tell
 else
@@ -81,7 +79,7 @@ else
         -- Get the session of the current window
         tell current session of newWindow
             -- Run Neovim
-            write text "nvim -c startinsert -c \"set wrap\" -c \"set linebreak\" -c \"map j gj\" -c \"map k gk\" -c \"set filetype=markdown\""
+            write text "nvim -c startinsert -c \"set wrap\" -c \"set linebreak\" -c \"map j gj\" -c \"map k gk\" -c \"set filetype=text\""
             if not isEmpty then
                 -- Wait for Neovim to start (adjust the delay if necessary)
                 delay 0.5

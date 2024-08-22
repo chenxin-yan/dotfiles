@@ -23,6 +23,7 @@ bindkey '^n' history-search-forward
 
 # == add plugins using Zinit == 
 
+# syntax highlighting
 zinit light zsh-users/zsh-syntax-highlighting
 
 # autocompletion
@@ -117,7 +118,7 @@ _fzf_comprun() {
 
 # -- Eza (better ls) config --
 alias ls="eza --color=always --long --git --no-filesize --icons=always --no-time --no-user --no-permissions"
-alias tree="eza -TL 2 --color=always --icons=always"
+alias tree="eza -TL 2 --color=always --icons=always --git"
 
 # -- Zoxide (better cd) config -- 
 eval "$(zoxide init --cmd cd zsh)"
