@@ -13,7 +13,6 @@ SELECTED_DIR=$(fd --type d --max-depth 1 . "$AREA_DIR" | fzf)
 # Check if a directory was selected
 if [ -n "$SELECTED_DIR" ]; then
     cd "$SELECTED_DIR"
-    yazi
 else
     echo "No directory selected."
 fi

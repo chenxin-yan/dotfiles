@@ -21,7 +21,7 @@ cleanup_sessions() {
 cleanup_sessions
 
 # Use fd to select a top-level directory
-SELECTED_DIR=$(fd --type d -L --max-depth 1 . "$DEV_DIR" | fzf)
+SELECTED_DIR=$(fd --type d -L --max-depth 1 . "$DEV_DIR" | fzf --prompt="Select a project to open: ")
 
 # Check if a directory was selected
 if [ -n "$SELECTED_DIR" ]; then
