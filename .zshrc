@@ -156,14 +156,16 @@ alias obc='~/.local/bin/scripts/obsidian_new_note.sh'
 alias obs='~/.local/bin/scripts/obsidian_search.sh'
 
 # tmux/dev project
+alias cdv='cd $DEV_DIR'
 alias dv='~/.local/bin/scripts/dev_session.sh'
 alias dvc='~/.local/bin/scripts/dev_clone.sh'
 alias dvrm='~/.local/bin/scripts/dev_remove.sh'
 
 # general proejcts
-alias cpj='cd $PROJECT_DIR'
+alias cpj='cd $PARA_DIR/Projects/'
 alias pj='. ~/.local/bin/scripts/projects_cd.sh'
 alias area='. ~/.local/bin/scripts/areas_cd.sh'
+alias carea='cd $PARA_DIR/Areas/'
 
 # Yazi
 function e() {
@@ -174,6 +176,10 @@ function e() {
   fi
   rm -f -- "$tmp"
 }
+
+# pandoc
+alias md2mla='~/.local/bin/scripts/markdown_to_docx_mla.sh'
+alias md2pdf='~/.local/bin/scripts/markdown_to_pdf.sh'
 
 if [ -n "${ZSH_DEBUGRC+1}" ]; then
     zprof

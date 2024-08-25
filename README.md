@@ -17,7 +17,7 @@ brew install git
 brew install stow
 ```
 
-## installation
+## Installation
 
 ```bash
 git clone git@github.com:chenxin-yan/dotfiles.git ~/
@@ -25,7 +25,7 @@ cd ~/dotfiles
 stow .
 ```
 
-## Setup & Configuration
+## Setup & configuration
 
 1. install Plugin manager: [zinit](https://github.com/zdharma-continuum/zinit)
 2. install prompt theme engine: [Oh My Posh](https://ohmyposh.dev/docs/installation/macos)
@@ -48,4 +48,9 @@ stow .
     - install [SF Symbals](https://developer.apple.com/sf-symbols/) for macos native symbals
     - install [sketchybar-app-font](https://github.com/kvndrsslr/sketchybar-app-font)
 13. install terminal file explorer: [yazi](https://yazi-rs.github.io)
-14. (Optional) Install system info fetcher: [macchina](https://github.com/Macchina-CLI/macchina)
+14. install file converter: [pandoc](https://pandoc.org)
+    - template for pdf generation: [Eisvogel](https://github.com/Wandmalfarbe/pandoc-latex-template)
+    - install [BasicTex](https://tug.org/mactex/morepackages.html)
+    - install [Better BibTex for Zotero](https://retorque.re/zotero-better-bibtex/)
+    - install [wkhtmltopdf](https://wkhtmltopdf.org/downloads.html)
+15. (Optional) Install system info fetcher: [macchina](https://github.com/Macchina-CLI/macchina)
