@@ -208,7 +208,7 @@ keymap = [
   ], run = "cd ~/.config", desc = "Go to the config directory" },
   { on = [
     "g",
-    "d",
+    "l",
   ], run = "cd ~/Downloads", desc = "Go to the downloads directory" },
   { on = [
     "g",
@@ -216,8 +216,16 @@ keymap = [
   ], run = "cd ~/Desktop/", desc = "Go to the desktop directory" },
   { on = [
     "g",
-    "v",
+    "d",
   ], run = "cd ~/dev/", desc = "Go to the development directory" },
+  { on = [
+    "g",
+    "p",
+  ], run = "cd /Users/yanchenxin/Library/Mobile\\ Documents/com~apple~CloudDocs/PARA/Projects", desc = "Go to the project directory" },
+  { on = [
+    "g",
+    "a",
+  ], run = "cd /Users/yanchenxin/Library/Mobile\\ Documents/com~apple~CloudDocs/PARA/Areas", desc = "Go to the area directory" },
   { on = [
     "g",
     "<Space>",
