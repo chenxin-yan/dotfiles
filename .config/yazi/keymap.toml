@@ -31,8 +31,8 @@ keymap = [
   { on = "h", run = "leave", desc = "Go back to the parent directory" },
   { on = "l", run = "enter", desc = "Enter the child directory" },
 
-  { on = "H", run = "back", desc = "Go back to the previous directory" },
-  { on = "L", run = "forward", desc = "Go forward to the next directory" },
+  { on = "<C-o>", run = "back", desc = "Go back to the previous directory" },
+  { on = "<C-i>", run = "forward", desc = "Go forward to the next directory" },
 
   # Seeking
   { on = "K", run = "seek -5", desc = "Seek up 5 units in the preview" },
@@ -208,11 +208,11 @@ keymap = [
   ], run = "cd ~/.config", desc = "Go to the config directory" },
   { on = [
     "g",
-    "l",
+    "D",
   ], run = "cd ~/Downloads", desc = "Go to the downloads directory" },
   { on = [
     "g",
-    "D",
+    "H",
   ], run = "cd ~/Desktop/", desc = "Go to the desktop directory" },
   { on = [
     "g",

@@ -26,6 +26,7 @@ image_quality = 75
 sixel_fraction = 15
 ueberzug_scale = 1
 ueberzug_offset = [0, 0, 0, 0]
+wrap = "no"
 
 [opener]
 edit = [
