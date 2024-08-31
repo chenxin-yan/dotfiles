@@ -180,6 +180,7 @@ function e() {
   fi
   rm -f -- "$tmp"
 }
+alias yz='yazi'
 
 # pandoc
 alias md2mla='~/.local/bin/scripts/markdown_to_docx_mla.sh'

@@ -55,3 +55,10 @@ stow .
     - install [Better BibTex for Zotero](https://retorque.re/zotero-better-bibtex/)
     - install [wkhtmltopdf](https://wkhtmltopdf.org/downloads.html)
 15. (Optional) Install system info fetcher: [macchina](https://github.com/Macchina-CLI/macchina)
+
+### Setup SSH Server/client
+
+Follow this [guide](https://www.youtube.com/watch?v=8LcTA5m6_ts)
+
+- setup [tailscale](https://tailscale.com)
+- setup mosh follow this [guide](https://docs.blink.sh/integrations/tailscale+mosh).
