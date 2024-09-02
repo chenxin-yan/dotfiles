@@ -163,13 +163,12 @@ alias obg='~/.local/bin/scripts/obsidian_grep.sh'
 alias cdv='cd $DEV_DIR'
 alias dv='~/.local/bin/scripts/dev_session.sh'
 alias dvc='~/.local/bin/scripts/dev_clone.sh'
-alias dvrm='~/.local/bin/scripts/dev_remove.sh'
 
 # general proejcts
-alias cpj='cd $PARA_DIR/Projects/'
-alias pj='. ~/.local/bin/scripts/projects_cd.sh'
+alias cpj='cd $PROJECT_DIR'
+alias pj='. ~/.local/bin/scripts/project_session.sh'
 alias area='. ~/.local/bin/scripts/areas_cd.sh'
-alias carea='cd $PARA_DIR/Areas/'
+alias carea='cd $AREA_DIR'
 
 # Yazi
 function e() {

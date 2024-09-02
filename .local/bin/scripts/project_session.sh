@@ -1,9 +1,10 @@
 #!/bin/bash
 
 # Check if the project directory exists, if not, create it
-if [ ! -d "$DEV_DIR" ]; then
-  mkdir -p "$DEV_DIR"
+if [ ! -d "$PROJECT_DIR" ]; then
+  mkdir -p "$PROJECT_DIR"
 fi
+
 
 # Function to clean up tmux sessions without existing folders
 cleanup_sessions() {
@@ -22,7 +23,7 @@ cleanup_sessions() {
 cleanup_sessions
 
 # Use fd to select a top-level directory
-SELECTED_DIR=$(fd --type d -L --max-depth 1 . "$DEV_DIR" | fzf --prompt="Select a project to open: ")
+SELECTED_DIR=$(fd --type d -L --max-depth 1 . "$PROJECT_DIR" | fzf --prompt="Select a project to open: ")
 
 # Check if a directory was selected
 if [ -n "$SELECTED_DIR" ]; then
@@ -42,3 +43,4 @@ if [ -n "$SELECTED_DIR" ]; then
 else
   echo "No directory selected."
 fi
+

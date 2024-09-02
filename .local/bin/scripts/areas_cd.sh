@@ -1,7 +1,5 @@
 #!/bin/bash
 
-AREA_DIR=$PARA_DIR/Areas
-
 # Check if the project directory exists, if not, create it
 if [ ! -d "$AREA_DIR" ]; then
   mkdir -p "$AREA_DIR"
