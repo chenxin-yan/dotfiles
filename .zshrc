@@ -138,6 +138,7 @@ alias nvide='neovide'
 alias G='lazygit'
 alias v='nvim'
 alias Leet='nvim Leetcode.nvim'
+alias nLeet='neovide Leetcode.nvim'
 alias ovo='Macchina'
 
 alias c='clear'
@@ -158,6 +159,7 @@ alias tkss='tmux kill-session -t'
 alias obc='~/.local/bin/scripts/obsidian_new_note.sh'
 alias obs='~/.local/bin/scripts/obsidian_search.sh'
 alias obg='~/.local/bin/scripts/obsidian_grep.sh'
+alias cob='cd $VAULT_PATH'
 
 # tmux/dev project
 alias cdv='cd $DEV_DIR'

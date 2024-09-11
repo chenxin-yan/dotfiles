@@ -31,8 +31,8 @@ keymap = [
   { on = "h", run = "leave", desc = "Go back to the parent directory" },
   { on = "l", run = "enter", desc = "Enter the child directory" },
 
-  { on = "<C-o>", run = "back", desc = "Go back to the previous directory" },
-  { on = "<C-i>", run = "forward", desc = "Go forward to the next directory" },
+  { on = "H", run = "back", desc = "Go back to the previous directory" },
+  { on = "L", run = "forward", desc = "Go forward to the next directory" },
 
   # Seeking
   { on = "K", run = "seek -5", desc = "Seek up 5 units in the preview" },
@@ -208,15 +208,15 @@ keymap = [
   ], run = "cd ~/.config", desc = "Go to the config directory" },
   { on = [
     "g",
-    "D",
+    "d",
   ], run = "cd ~/Downloads", desc = "Go to the downloads directory" },
   { on = [
     "g",
-    "H",
+    "D",
   ], run = "cd ~/Desktop/", desc = "Go to the desktop directory" },
   { on = [
     "g",
-    "d",
+    "v",
   ], run = "cd ~/dev/", desc = "Go to the development directory" },
   { on = [
     "g",
@@ -343,8 +343,8 @@ keymap = [
   { on = "<A-f>", run = "forward --end-of-word", desc = "Move forward to the end of the current or next word" },
 
   # Line-wise movement
-  { on = "0", run = "move -999", desc = "Move to the BOL" },
-  { on = "$", run = "move 999", desc = "Move to the EOL" },
+  { on = "H", run = "move -999", desc = "Move to the BOL" },
+  { on = "L", run = "move 999", desc = "Move to the EOL" },
   { on = "<C-a>", run = "move -999", desc = "Move to the BOL" },
   { on = "<C-e>", run = "move 999", desc = "Move to the EOL" },
   { on = "<Home>", run = "move -999", desc = "Move to the BOL" },

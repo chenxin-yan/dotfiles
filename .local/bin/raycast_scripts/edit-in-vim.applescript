@@ -78,6 +78,7 @@ else
         
         -- Get the session of the current window
         tell current session of newWindow
+            delay 0.5
             -- Run Neovim
             write text "nvim -c startinsert -c \"set wrap\" -c \"set linebreak\" -c \"map j gj\" -c \"map k gk\" -c \"set filetype=text\""
             if not isEmpty then
