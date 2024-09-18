@@ -47,8 +47,8 @@ setopt hist_ignore_dups
 setopt hist_find_no_dups
 
 # == add snippts using zinit
+
 zinit snippet OMZP::git
-zinit snippet OMZP::command-not-found
 zinit snippet OMZP::sudo
 
 # load completion
@@ -167,6 +167,7 @@ alias dv='~/.local/bin/scripts/dev_session.sh'
 alias dvc='~/.local/bin/scripts/dev_clone.sh'
 
 # general proejcts
+alias tscu='~/.local/bin/scripts/dev_cleanup_sessions.sh'
 alias cpj='cd $PROJECT_DIR'
 alias pj='. ~/.local/bin/scripts/project_session.sh'
 alias area='. ~/.local/bin/scripts/areas_cd.sh'
