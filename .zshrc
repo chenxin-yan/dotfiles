@@ -139,12 +139,15 @@ alias G='lazygit'
 alias v='nvim'
 alias Leet='nvim Leetcode.nvim'
 alias nLeet='neovide Leetcode.nvim'
+alias o.='open .'
 alias ovo='Macchina'
 
 alias c='clear'
 alias lsb='ls -ah | bat'
 
 alias chrome='open -a "Google Chrome"'
+
+alias frg='~/.local/bin/scripts/grep_current_dir.sh'
 
 # tmux alixes
 alias ta='tmux attach'
@@ -167,7 +170,7 @@ alias dv='~/.local/bin/scripts/dev_session.sh'
 alias dvc='~/.local/bin/scripts/dev_clone.sh'
 
 # general proejcts
-alias tscu='~/.local/bin/scripts/dev_cleanup_sessions.sh'
+alias tcu='~/.local/bin/scripts/dev_cleanup_sessions.sh'
 alias cpj='cd $PROJECT_DIR'
 alias pj='. ~/.local/bin/scripts/project_session.sh'
 alias area='. ~/.local/bin/scripts/areas_cd.sh'
