@@ -46,7 +46,7 @@ keymap = [
   { on = "v", run = "visual_mode", desc = "Enter visual mode (selection mode)" },
   { on = "V", run = "visual_mode --unset", desc = "Enter visual mode (unset mode)" },
   { on = "<C-a>", run = "select_all --state=true", desc = "Select all files" },
-  { on = "<C-r>", run = "select_all --state=none", desc = "Inverse selection of all files" },
+  { on = "<C-i>", run = "select_all --state=none", desc = "Inverse selection of all files" },
 
   # Operation
   { on = "<Enter>", run = "open", desc = "Open selected files" },
