@@ -100,6 +100,7 @@ show_file_or_dir_preview="if [ -d {} ]; then eza --tree --color=always {} | head
 
 export FZF_CTRL_T_OPTS="--preview '$show_file_or_dir_preview'"
 export FZF_ALT_C_OPTS="--preview 'eza --tree --color=always {} | head -200'"
+export FZF_COMPLETION_TRIGGER="::"
 
 # Use rg with fzf
 alias rgi='~/.local/bin/scripts/rg_with_fzf.sh'
@@ -121,6 +122,7 @@ _fzf_comprun() {
 
 # -- Eza (better ls) config --
 alias ls="eza --color=always --long --git --no-filesize --icons=always --no-time --no-user --no-permissions"
+alias ll="eza -ah --color=always --long --git --no-filesize --icons=always --no-time --no-user --no-permissions"
 alias tree="eza -TL 2 --color=always --icons=always --git"
 
 # -- Zoxide (better cd) config -- 
