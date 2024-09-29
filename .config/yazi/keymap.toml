@@ -260,6 +260,11 @@ keymap = [
   ], run = "help", desc = "Open help" },
 ]
 
+[[manager.prepend_keymap]]
+on = ["<c-s>"]
+run = "plugin easyjump"
+desc = "easyjump"
+
 [tasks]
 
 keymap = [
