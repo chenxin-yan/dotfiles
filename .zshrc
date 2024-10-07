@@ -187,7 +187,6 @@ function e() {
   fi
   rm -f -- "$tmp"
 }
-alias yz='yazi'
 
 # pandoc
 alias md2mla='~/.local/bin/scripts/markdown_to_docx_mla.sh'
@@ -196,3 +195,6 @@ alias md2pdf='~/.local/bin/scripts/markdown_to_pdf.sh'
 if [ -n "${ZSH_DEBUGRC+1}" ]; then
     zprof
 fi
+
+# Created by `pipx` on 2024-10-04 07:23:34
+export PATH="$PATH:/Users/yanchenxin/.local/bin"
