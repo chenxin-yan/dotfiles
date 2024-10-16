@@ -151,7 +151,9 @@ alias chrome='open -a "Google Chrome"'
 
 alias frg='~/.local/bin/scripts/grep_current_dir.sh'
 
-# tmux alixes
+alias gcco='gcc -Wall -g -o '
+
+# tmux alias
 alias ta='tmux attach'
 alias tat='tmux attach -t'
 alias ts='tmux new-session -s'
