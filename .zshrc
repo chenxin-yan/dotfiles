@@ -55,7 +55,7 @@ zinit snippet OMZP::git
 zinit snippet OMZP::sudo
 
 # load completion
-autoload -U compinit && compinit
+autoload -Uz compinit; compinit -C
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
 zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}"
 
@@ -133,10 +133,6 @@ eval "$(zoxide init --cmd cd zsh)"
 
 # -- Bat (better cat) --
 alias cat='bat'
-
-# -- the fuck --
-eval $(thefuck --alias)
-eval $(thefuck --alias fk)
 
 # == aliases ==
 alias nvide='neovide'
