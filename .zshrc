@@ -16,6 +16,9 @@ source "$HOME/.local/share/zinit/zinit.git/zinit.zsh"
 
 export XDG_CONFIG_HOME="$HOME/.config"
 
+# Created by `pipx` on 2024-10-04 07:23:34
+export PATH="$PATH:/Users/yanchenxin/.local/bin"
+
 # == keybindings ==
 bindkey -v
 bindkey '^p' history-search-backward
@@ -141,7 +144,6 @@ alias G='lazygit'
 alias v='nvim'
 alias Leet='nvim Leetcode.nvim'
 alias nLeet='neovide Leetcode.nvim'
-alias o.='open .'
 alias ovo='Macchina'
 
 alias c='clear'
@@ -172,9 +174,9 @@ alias cob='cd $VAULT_PATH'
 alias cdv='cd $DEV_DIR'
 alias dv='~/.local/bin/scripts/dev_session.sh'
 alias dvc='~/.local/bin/scripts/dev_clone.sh'
+alias tcu='~/.local/bin/scripts/dev_cleanup_sessions.sh'
 
 # general proejcts
-alias tcu='~/.local/bin/scripts/dev_cleanup_sessions.sh'
 alias cpj='cd $PROJECT_DIR'
 alias pj='. ~/.local/bin/scripts/project_session.sh'
 alias area='. ~/.local/bin/scripts/areas_cd.sh'
@@ -197,6 +199,3 @@ alias md2pdf='~/.local/bin/scripts/markdown_to_pdf.sh'
 if [ -n "${ZSH_DEBUGRC+1}" ]; then
     zprof
 fi
-
-# Created by `pipx` on 2024-10-04 07:23:34
-export PATH="$PATH:/Users/yanchenxin/.local/bin"
