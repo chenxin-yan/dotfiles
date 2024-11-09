@@ -262,7 +262,7 @@ keymap = [
 ]
 
 [[manager.prepend_keymap]]
-on = ["S"]
+on = ["<C-s>"]
 run = "plugin easyjump"
 desc = "easyjump"
 

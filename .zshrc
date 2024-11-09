@@ -147,7 +147,7 @@ alias lsb='ls -ah | bat'
 
 alias chrome='open -a "Google Chrome"'
 
-alias frg='~/.local/bin/scripts/grep_current_dir.sh'
+alias fzg='~/.local/bin/scripts/grep_current_dir.sh'
 
 alias gcco='gcc -Wall -g -o '
 
