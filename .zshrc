@@ -167,14 +167,13 @@ alias obg='~/.local/bin/scripts/obsidian_grep.sh'
 alias cob='cd $VAULT_PATH'
 
 # tmux/dev project
+alias pj='. ~/.local/bin/scripts/project_session.sh'
+alias tcu='~/.local/bin/scripts/cleanup_sessions.sh'
 alias cdv='cd $DEV_DIR'
-alias dv='~/.local/bin/scripts/dev_session.sh'
 alias dvc='~/.local/bin/scripts/dev_clone.sh'
-alias tcu='~/.local/bin/scripts/dev_cleanup_sessions.sh'
 
 # general proejcts
 alias cpj='cd $PROJECT_DIR'
-alias pj='. ~/.local/bin/scripts/project_session.sh'
 alias area='. ~/.local/bin/scripts/areas_cd.sh'
 alias carea='cd $AREA_DIR'
 
