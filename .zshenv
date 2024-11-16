@@ -12,4 +12,4 @@ export DEV_DIR=~/dev/
 export PROJECT_DIR=/Users/yanchenxin/Library/Mobile\ Documents/com~apple~CloudDocs/PARA/Projects/
 export AREA_DIR=/Users/yanchenxin/Library/Mobile\ Documents/com~apple~CloudDocs/PARA/Areas/
 
-. "$HOME/.cargo/env"
+# . "$HOME/.cargo/env"
