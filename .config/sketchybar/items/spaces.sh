@@ -1,8 +1,6 @@
 #!/bin/bash
 
-SPACE_ICONS=("~" "1:DEV" "2:WEB" "3:TODO" "4:NOTE" "5:CHAT" "6:MEDIA")
-
-# SPACE_ICONS=("~" "1:􀩼" "2:􀎬" "3:􀷾" "4:􀓕" "5:􀌤" "6:􀑪" "7" "8" "9")
+SPACE_ICONS=("~" "1:DEV" "2:WEB" "3:TODO" "4:NOTE" "5:CHAT" "6:MEDIA" "7" "8" "9")
 
 SPACE=(
   icon.padding_left=18
@@ -18,17 +16,20 @@ SPACE=(
   background.corner_radius=10
   background.drawing=on
   label.drawing=off
-  script="$PLUGIN_DIR/space.sh"
 )
+
+sketchybar --add event aerospace_workspace_change
 
 sid=0
 for i in "${!SPACE_ICONS[@]}"
 do
-  sid=$(($i+1))
-  sketchybar --add space space.$sid left
-  sketchybar --set space.$sid associated_space=$sid
-  sketchybar --set space.$sid icon=${SPACE_ICONS[i]}
-  sketchybar --set space.$sid "${SPACE[@]}"
+  sid=$(($i))
+  sketchybar --add item space.$sid left \
+             --subscribe space.$sid aerospace_workspace_change \
+             --set space.$sid "${SPACE[@]}" \
+                  script="$PLUGIN_DIR/space.sh $sid" \
+                  click_script="aerospace workspace $sid" \
+             --set space.$sid icon=${SPACE_ICONS[i]}
 done
 
 sketchybar --add item space_separator_left left \
