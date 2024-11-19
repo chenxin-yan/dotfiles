@@ -16,6 +16,9 @@ source "$HOME/.local/share/zinit/zinit.git/zinit.zsh"
 
 export XDG_CONFIG_HOME="$HOME/.config"
 
+# secrete env
+source "$HOME/.env"
+
 # Created by `pipx` on 2024-10-04 07:23:34
 export PATH="$PATH:/Users/yanchenxin/.local/bin"
 
@@ -153,7 +156,6 @@ alias gcco='gcc -Wall -g -o '
 
 # tmux alias
 alias ta='tmux attach'
-alias tat='tmux attach -t'
 alias ts='tmux new-session -s'
 alias tl='tmux list-sessions'
 alias tksv='tmux kill-server'
