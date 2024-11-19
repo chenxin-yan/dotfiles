@@ -11,8 +11,10 @@ after-login-command = []
 # Available commands : https://nikitabobko.github.io/AeroSpace/commands
 after-startup-command = ['exec-and-forget sketchybar']
 
-exec-on-workspace-change = ['/bin/bash', '-c',
-    'sketchybar --trigger aerospace_workspace_change FOCUSED_WORKSPACE=$AEROSPACE_FOCUSED_WORKSPACE'
+exec-on-workspace-change = [
+  '/bin/bash',
+  '-c',
+  'sketchybar --trigger aerospace_workspace_change FOCUSED_WORKSPACE=$AEROSPACE_FOCUSED_WORKSPACE',
 ]
 
 # Start AeroSpace at login
@@ -64,7 +66,7 @@ inner.horizontal = 6
 inner.vertical = 6
 outer.left = 6
 outer.bottom = 6
-outer.top = 44
+outer.top = [{ monitor."LG" = 44 }, 12]
 outer.right = 6
 
 # 'main' binding mode declaration
