@@ -26,4 +26,17 @@ config.enable_kitty_keyboard = true
 
 config.max_fps = 120
 
+config.keys = {
+	{
+		key = "p",
+		mods = "CTRL|SHIFT",
+		action = wezterm.action.DisableDefaultAssignment,
+	},
+	{
+		key = "n",
+		mods = "CTRL|SHIFT",
+		action = wezterm.action.DisableDefaultAssignment,
+	},
+}
+
 return config

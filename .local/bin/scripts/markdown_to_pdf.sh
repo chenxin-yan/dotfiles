@@ -33,7 +33,7 @@ fi
 if [ "$TEMPLATE" = "eisvogel" ]; then
     pandoc "$INPUT_FILE" -s -f markdown -o "$OUTPUT_FILE" --template eisvogel --listings
 else
-    pandoc "$INPUT_FILE" --defaults=$HOME/.pandoc/templates/pdf.yaml -o "$OUTPUT_FILE"
+    pandoc "$INPUT_FILE" -V geometry:margin=1in --defaults=$HOME/.pandoc/templates/pdf.yaml -o "$OUTPUT_FILE"
 fi
 
 # Check if pandoc command succeeded
