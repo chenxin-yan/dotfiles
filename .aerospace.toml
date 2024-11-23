@@ -128,8 +128,6 @@ ctrl-4 = 'workspace 4'
 ctrl-5 = 'workspace 5'
 ctrl-6 = 'workspace 6'
 ctrl-7 = 'workspace 7'
-ctrl-8 = 'workspace 8'
-ctrl-9 = 'workspace 9'
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#move-node-to-workspace
 alt-shift-backtick = 'move-node-to-workspace 0'
@@ -140,8 +138,6 @@ alt-shift-4 = 'move-node-to-workspace 4'
 alt-shift-5 = 'move-node-to-workspace 5'
 alt-shift-6 = 'move-node-to-workspace 6'
 alt-shift-7 = 'move-node-to-workspace 7'
-alt-shift-8 = 'move-node-to-workspace 8'
-alt-shift-9 = 'move-node-to-workspace 9'
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#workspace-back-and-forth
 alt-tab = 'workspace-back-and-forth'
