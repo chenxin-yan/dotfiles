@@ -43,8 +43,7 @@ stow .
 8. install better ls: [Eza](https://github.com/eza-community/eza/blob/main/INSTALL.md)
 9. install better cd: [Zoxicde](https://github.com/ajeetdsouza/zoxide)
 10. install better cat: [Bat](https://github.com/sharkdp/bat)
-11. Install tiling window manager: [Yabai](https://github.com/koekeishiya/yabai)
-    - Install [skhd](https://github.com/koekeishiya/skhd) for window management shortcuts
+11. Install tiling window manager: [aerospace](https://github.com/nikitabobko/AeroSpace)
 12. install [sketchybar](https://felixkratz.github.io/SketchyBar/setup)
     - install [SF Symbals](https://developer.apple.com/sf-symbols/) for macos native symbals
     - install [sketchybar-app-font](https://github.com/kvndrsslr/sketchybar-app-font)
