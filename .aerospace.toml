@@ -127,7 +127,6 @@ ctrl-3 = 'workspace 3'
 ctrl-4 = 'workspace 4'
 ctrl-5 = 'workspace 5'
 ctrl-6 = 'workspace 6'
-ctrl-7 = 'workspace 7'
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#move-node-to-workspace
 alt-shift-backtick = 'move-node-to-workspace 0'
@@ -137,7 +136,6 @@ alt-shift-3 = 'move-node-to-workspace 3'
 alt-shift-4 = 'move-node-to-workspace 4'
 alt-shift-5 = 'move-node-to-workspace 5'
 alt-shift-6 = 'move-node-to-workspace 6'
-alt-shift-7 = 'move-node-to-workspace 7'
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#workspace-back-and-forth
 alt-tab = 'workspace-back-and-forth'
@@ -170,6 +168,14 @@ alt-shift-l = ['join-with right', 'mode main']
 # open app in specific workspace
 
 [[on-window-detected]]
+if.app-id = 'com.apple.Music'
+run = "move-node-to-workspace 0"
+
+[[on-window-detected]]
+if.app-id = 'com.apple.mail'
+run = "move-node-to-workspace 0"
+
+[[on-window-detected]]
 if.app-id = 'com.microsoft.VSCode'
 run = "move-node-to-workspace 1"
 
@@ -196,7 +202,3 @@ run = "move-node-to-workspace 5"
 [[on-window-detected]]
 if.app-id = 'com.tencent.xinWeChat'
 run = "move-node-to-workspace 5"
-
-[[on-window-detected]]
-if.app-id = 'com.apple.Music'
-run = "move-node-to-workspace 6"
