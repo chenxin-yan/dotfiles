@@ -1,0 +1,5 @@
+[plugin]
+deps = [{ use = "KKV9/compress", rev = "60b24af" }]
+
+[flavor]
+deps = []

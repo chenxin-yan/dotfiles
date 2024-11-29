@@ -262,9 +262,22 @@ keymap = [
 ]
 
 [[manager.prepend_keymap]]
-on = ["<C-s>"]
-run = "plugin easyjump"
-desc = "easyjump"
+on = ["g", "r"]
+run = '''
+  shell 'ya pub dds-cd --str "$(git rev-parse --show-toplevel)"' --confirm
+'''
+desc = "Go back to root of Git repo"
+
+[[manager.prepend_keymap]]
+on = "<C-p>"
+run = '''
+  shell 'qlmanage -p "$@"' --confirm
+'''
+
+[[manager.prepend_keymap]]
+on = "<C-z>"
+run = "plugin compress"
+desc = "Archive selected files"
 
 [tasks]
 
