@@ -275,6 +275,10 @@ run = '''
 '''
 
 [[manager.prepend_keymap]]
+on = "<C-y>"
+run = ["plugin system-clipboard"]
+
+[[manager.prepend_keymap]]
 on = "<C-z>"
 run = "plugin compress"
 desc = "Archive selected files"

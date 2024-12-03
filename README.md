@@ -48,6 +48,7 @@ stow .
     - install [SF Symbals](https://developer.apple.com/sf-symbols/) for macos native symbals
     - install [sketchybar-app-font](https://github.com/kvndrsslr/sketchybar-app-font)
 13. install terminal file explorer: [yazi](https://yazi-rs.github.io)
+    - install clipboard CLI: [Clipboard](https://github.com/Slackadays/ClipBoard)
 14. install file converter: [pandoc](https://pandoc.org)
     - template for pdf generation: [Eisvogel](https://github.com/Wandmalfarbe/pandoc-latex-template)
     - install [BasicTex](https://tug.org/mactex/morepackages.html)
