@@ -138,7 +138,7 @@ eval "$(zoxide init --cmd cd zsh)"
 alias cat='bat'
 
 # == aliases ==
-alias nvide='neovide'
+alias nv='neovide'
 alias G='lazygit'
 alias v='nvim'
 alias Leet='nvim Leetcode.nvim'
@@ -146,7 +146,7 @@ alias nLeet='neovide Leetcode.nvim'
 alias ovo='Macchina'
 
 alias c='clear'
-alias lsb='ls -ah | bat'
+alias lsc='ls -ah | bat'
 
 alias chrome='open -a "Google Chrome"'
 
@@ -172,6 +172,7 @@ alias cob='cd $VAULT_PATH'
 alias se='. ~/.local/bin/scripts/select_sessions.sh'
 alias tcu='~/.local/bin/scripts/cleanup_sessions.sh'
 alias cdv='cd $DEV_DIR'
+alias dvn='cd $DEV_DIR; mkdir'
 alias dvc='~/.local/bin/scripts/dev_clone.sh'
 
 # general
