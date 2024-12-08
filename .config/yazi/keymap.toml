@@ -1,6 +1,6 @@
 # A TOML linter such as https://taplo.tamasfe.dev/ can use this schema to validate your config.
 # If you encounter any issues, please make an issue at https://github.com/yazi-rs/schemas.
-"$schema" = "https://yazi-rs.github.io/schemas/keymap.json"
+# "$schema" = "https://yazi-rs.github.io/schemas/keymap.json"
 
 [manager]
 
@@ -38,13 +38,13 @@ keymap = [
 
   # Selection
   { on = "<Space>", run = [
-    "select --state=none",
+    "toggle",
     "arrow 1",
   ], desc = "Toggle the current selection state" },
   { on = "v", run = "visual_mode", desc = "Enter visual mode (selection mode)" },
   { on = "V", run = "visual_mode --unset", desc = "Enter visual mode (unset mode)" },
-  { on = "<C-a>", run = "select_all --state=true", desc = "Select all files" },
-  { on = "<C-i>", run = "select_all --state=none", desc = "Inverse selection of all files" },
+  { on = "<C-a>", run = "toggle_all --state=on", desc = "Select all files" },
+  { on = "<C-i>", run = "toggle_all", desc = "Inverse selection of all files" },
 
   # Operation
   { on = "<Enter>", run = "open", desc = "Open selected files" },
@@ -85,7 +85,7 @@ keymap = [
   { on = [
     "m",
     "c",
-  ], run = "linemode ctime", desc = "Set linemode to ctime" },
+  ], run = "linemode btime", desc = "Set linemode to btime" },
   { on = [
     "m",
     "m",
@@ -131,29 +131,29 @@ keymap = [
     ",",
     "m",
   ], run = [
-    "sort modified --reverse=no",
+    "sort mtime --reverse=no",
     "linemode mtime",
   ], desc = "Sort by modified time" },
   { on = [
     ",",
     "M",
   ], run = [
-    "sort modified --reverse",
+    "sort mtime --reverse",
     "linemode mtime",
   ], desc = "Sort by modified time (reverse)" },
   { on = [
     ",",
     "c",
   ], run = [
-    "sort created --reverse=no",
-    "linemode ctime",
+    "sort btime --reverse=no",
+    "linemode btime",
   ], desc = "Sort by created time" },
   { on = [
     ",",
     "C",
   ], run = [
-    "sort created --reverse",
-    "linemode ctime",
+    "sort btime --reverse",
+    "linemode btime",
   ], desc = "Sort by created time (reverse)" },
   { on = [
     ",",
@@ -305,7 +305,7 @@ keymap = [
   { on = "<F1>", run = "help", desc = "Open help" },
 ]
 
-[select]
+[pick]
 
 keymap = [
   { on = "<Esc>", run = "close", desc = "Cancel selection" },
