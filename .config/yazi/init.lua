@@ -1,0 +1,1 @@
+require("omp"):setup()
