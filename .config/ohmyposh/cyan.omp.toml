@@ -62,9 +62,9 @@ final_space = true
     style = 'plain'
 
   [[blocks.segments]]
+    type = 'project'
     template = ' {{ if .Error }}{{ .Error }}{{ else }}{{ if .Version }} {{.Version}}{{ end }} {{ if .Name }}{{ .Name }}{{ end }}{{ end }} '
     foreground = 'p:blue'
-    type = 'project'
     style = 'plain'
 
 [[blocks]]
