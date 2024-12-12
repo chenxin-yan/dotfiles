@@ -1,5 +1,8 @@
 [plugin]
-deps = [{ use = "KKV9/compress", rev = "60b24af" }, { use = "orhnk/system-clipboard", rev = "7775a80" }]
+deps = [
+  { use = "KKV9/compress", rev = "60b24af" },
+  { use = "orhnk/system-clipboard", rev = "7775a80" },
+]
 
 [flavor]
-deps = []
+deps = [{ use = "yazi-rs/flavors:catppuccin-mocha", rev = "8458d25" }]
