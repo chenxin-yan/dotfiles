@@ -180,7 +180,7 @@ if.app-id = 'com.microsoft.VSCode'
 run = "move-node-to-workspace 1"
 
 [[on-window-detected]]
-if.app-id = 'com.culturedcode.ThingsMac'
+if.app-id = 'com.todoist.mac.Todoist'
 run = "move-node-to-workspace 3"
 
 [[on-window-detected]]
@@ -188,11 +188,11 @@ if.app-id = 'com.apple.iCal'
 run = "move-node-to-workspace 3"
 
 [[on-window-detected]]
-if.app-id = 'md.obsidian'
+if.app-id = 'com.lukilabs.lukiapp-setapp'
 run = "move-node-to-workspace 4"
 
 [[on-window-detected]]
-if.app-id = 'net.shinyfrog.bear'
+if.app-id = 'md.obsidian'
 run = "move-node-to-workspace 4"
 
 [[on-window-detected]]
