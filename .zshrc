@@ -138,11 +138,9 @@ eval "$(zoxide init --cmd cd zsh)"
 alias cat='bat'
 
 # == aliases ==
-alias nv='neovide'
 alias G='lazygit'
 alias v='nvim'
 alias Leet='nvim Leetcode.nvim'
-alias nLeet='neovide Leetcode.nvim'
 alias ovo='Macchina'
 
 alias c='clear'
