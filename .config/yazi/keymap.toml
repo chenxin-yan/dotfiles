@@ -264,7 +264,7 @@ keymap = [
 [[manager.prepend_keymap]]
 on = ["g", "r"]
 run = '''
-  shell 'ya pub dds-cd --str "$(git rev-parse --show-toplevel)"' --confirm
+  shell 'ya emit cd --str "$(git rev-parse --show-toplevel)"' --confirm
 '''
 desc = "Go back to root of Git repo"
 
