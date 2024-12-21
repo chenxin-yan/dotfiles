@@ -55,7 +55,8 @@ stow .
     - install [BasicTex](https://tug.org/mactex/morepackages.html)
     - install [Better BibTex for Zotero](https://retorque.re/zotero-better-bibtex/)
     - install [wkhtmltopdf](https://wkhtmltopdf.org/downloads.html)
-16. (Optional) Install system info fetcher: [macchina](https://github.com/Macchina-CLI/macchina)
+16. Install GitHub CLI: [gh](https://cli.github.com)
+17. (Optional) Install system info fetcher: [macchina](https://github.com/Macchina-CLI/macchina)
 
 ### Setup SSH Server/client
 
