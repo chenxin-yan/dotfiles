@@ -9,6 +9,8 @@ if [ ! -d "$DEV_DIR" ]; then
   mkdir -p "$DEV_DIR"
 fi
 
+~/.local/bin/scripts/cleanup_sessions.sh
+
 # Use fd to select a top-level directory
 SELECTED_DIR=$(fd --type d -L --max-depth 1 . "$PROJECT_DIR" "$DEV_DIR" | fzf --prompt="Select a project to open: ")
 

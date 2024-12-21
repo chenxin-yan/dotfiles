@@ -144,13 +144,10 @@ alias Leet='nvim Leetcode.nvim'
 alias ovo='Macchina'
 
 alias c='clear'
-alias lsc='ls -ah | bat'
 
 alias chrome='open -a "Google Chrome"'
 
 alias fzg='~/.local/bin/scripts/grep_current_dir.sh'
-
-alias gcco='gcc -Wall -g -o '
 
 # tmux alias
 alias ta='tmux attach'
@@ -166,15 +163,15 @@ alias obs='~/.local/bin/scripts/obsidian_search.sh'
 alias obg='~/.local/bin/scripts/obsidian_grep.sh'
 alias cob='cd $VAULT_PATH'
 
-# tmux/dev
+# session/projects
 alias se='. ~/.local/bin/scripts/select_sessions.sh'
-alias tcu='~/.local/bin/scripts/cleanup_sessions.sh'
+alias scu='~/.local/bin/scripts/cleanup_sessions.sh'
 alias cdv='cd $DEV_DIR'
 alias dvn='cd $DEV_DIR; mkdir'
 alias dvc='~/.local/bin/scripts/dev_clone.sh'
 
-# general
 alias cpj='cd $PROJECT_DIR'
+alias pjn='cd $PROJECT_DIR; mkdir'
 alias area='. ~/.local/bin/scripts/areas_cd.sh'
 alias carea='cd $AREA_DIR'
 
