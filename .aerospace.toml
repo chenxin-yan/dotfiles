@@ -198,3 +198,7 @@ run = "move-node-to-workspace 5"
 [[on-window-detected]]
 if.app-id = 'com.tencent.xinWeChat'
 run = "move-node-to-workspace 5"
+
+[[on-window-detected]]
+if.app-id = 'com.kishanbagaria.jack'
+run = "move-node-to-workspace 5"
