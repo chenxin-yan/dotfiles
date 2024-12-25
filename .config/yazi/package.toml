@@ -1,7 +1,7 @@
 [plugin]
 deps = [
   { use = "KKV9/compress", rev = "60b24af" },
-  { use = "orhnk/system-clipboard", rev = "7775a80" },
+  { use = "orhnk/system-clipboard", rev = "7775a80" }, { use = "Lil-Dank/lazygit", rev = "c82794f" },
 ]
 
 [flavor]
