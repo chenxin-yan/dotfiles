@@ -5,4 +5,4 @@ deps = [
 ]
 
 [flavor]
-deps = [{ use = "yazi-rs/flavors:catppuccin-mocha", rev = "8458d25" }]
+deps = [{ use = "yazi-rs/flavors:catppuccin-mocha", rev = "fc8eeaa" }]
