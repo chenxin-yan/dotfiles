@@ -4,6 +4,20 @@
             "complex_modifications": {
                 "rules": [
                     {
+                        "description": "Tab to Tab and Alt when hold",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "tab",
+                                    "modifiers": { "optional": ["any"] }
+                                },
+                                "to": [{ "key_code": "left_option" }],
+                                "to_if_alone": [{ "key_code": "tab" }],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
                         "description": "Hyper Key: Right command → left control + left option + left command ",
                         "manipulators": [
                             {
