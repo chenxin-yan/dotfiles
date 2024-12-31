@@ -1,4 +1,4 @@
-#!/usr/bin/osascript
+#!/bin/bash
 
 # Required parameters:
 # @raycast.schemaVersion 1
@@ -14,5 +14,4 @@
 # @raycast.author chenxin_yan
 # @raycast.authorURL https://raycast.com/chenxin_yan
 
-do shell script "/Applications/kitty.app/Contents/MacOS/kitty &"
-
+"/Applications/kitty.app/Contents/MacOS/kitty" --directory ~
