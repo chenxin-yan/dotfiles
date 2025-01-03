@@ -1,0 +1,24 @@
+# Fonts
+font-family = "JetBrainsMono Nerd Font"
+font-size = 14
+adjust-underline-position = 4
+
+# Mouse
+mouse-hide-while-typing = true
+# mouse-scroll-multiplier = 1
+
+# Theme
+theme = catppuccin-mocha
+cursor-invert-fg-bg = true
+background-opacity = 0.95
+window-theme = ghostty
+
+# Window
+gtk-single-instance = true
+gtk-tabs-location = bottom
+window-padding-y = 2,0
+window-padding-balance = true
+
+# Other
+copy-on-select = clipboard
+shell-integration-features = cursor,sudo,no-title
