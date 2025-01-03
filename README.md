@@ -2,7 +2,7 @@
 
 A minimal catppuccin setup. Dotfiles are managed using `stow`.
 
-![Preview](./Preview.jpg)
+![Preview](./preview.png)
 
 ## Dependencies
 
