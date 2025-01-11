@@ -24,6 +24,8 @@ export PATH="$PATH:/Users/yanchenxin/.local/bin"
 
 # == keybindings ==
 bindkey -v
+bindkey -M vicmd 'H' beginning-of-line
+bindkey -M vicmd 'L' end-of-line
 bindkey '^p' history-search-backward
 bindkey '^n' history-search-forward
 
