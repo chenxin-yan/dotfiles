@@ -37,7 +37,7 @@ stow .
    - install [tpm](https://github.com/tmux-plugins/tpm)
    - use `<prefix>I` to install plugins
 6. install git CLI: lazygit
-7. (Optional) install karabiner for key motification
+7. install karabiner for key motification
 8. install editor: [neovim](https://neovim.io)
    - download my nvim [config](https://github.com/chenxin-yan/nvim) and follow setup instructions
    - (optional) download neovide as nvim GUI: [neovide](https://neovide.dev)
@@ -58,9 +58,9 @@ stow .
 16. Install GitHub CLI: [gh](https://cli.github.com)
 17. (Optional) Install system info fetcher: [macchina](https://github.com/Macchina-CLI/macchina)
 
-### Setup SSH Server/client
+## Environmental Variables
 
-Follow this [guide](https://www.youtube.com/watch?v=8LcTA5m6_ts)
-
-- setup [tailscale](https://tailscale.com)
-- setup mosh follow this [guide](https://docs.blink.sh/integrations/tailscale+mosh).
+- `VAULT_PATH`: directory for notes
+- `DEV_DIR`: directory for any development projects
+- `PROJECT_DIR`: Directory for any non-development projects
+- `AREA_DIR`: Directory for files/documents
