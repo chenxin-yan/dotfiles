@@ -188,7 +188,6 @@ function e() {
 }
 
 # pandoc
-alias md2mla='~/.local/bin/scripts/markdown_to_docx_mla.sh'
 alias md2pdf='~/.local/bin/scripts/markdown_to_pdf.sh'
 
 if [ -n "${ZSH_DEBUGRC+1}" ]; then
