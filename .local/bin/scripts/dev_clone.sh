@@ -9,9 +9,6 @@ fi
 # Get the repository URL from the first argument
 REPO_URL=$1
 
-# Set the DEV_DIR if not already set
-DEV_DIR="${DEV_DIR:-$HOME/projects}"
-
 # Check if the project directory exists, if not, create it
 if [ ! -d "$DEV_DIR" ]; then
   mkdir -p "$DEV_DIR"
@@ -21,7 +18,7 @@ fi
 REPO_NAME=$(basename -s .git "$REPO_URL")
 
 # Prompt the user for symlink creation
-read -p "Do you want to create a symlink in $DEV_DIR and clone to the current directory? (y/n): " CREATE_SYMLINK
+read -p "Do you want to create a symlink in $DEV_DIR and clone to the current directory? [y/N]: " CREATE_SYMLINK
 
 if [ "$CREATE_SYMLINK" == "y" ]; then
   # Clone the repository into the current directory
