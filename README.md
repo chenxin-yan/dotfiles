@@ -56,6 +56,7 @@ stow .
     - install [Better BibTex for Zotero](https://retorque.re/zotero-better-bibtex/)
     - install [wkhtmltopdf](https://wkhtmltopdf.org/downloads.html)
 16. Install GitHub CLI: [gh](https://cli.github.com)
+    - install [gh-dash](https://github.com/dlvhdr/gh-dash)
 17. (Optional) Install system info fetcher: [macchina](https://github.com/Macchina-CLI/macchina)
 
 ## Environmental Variables
