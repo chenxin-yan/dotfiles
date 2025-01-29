@@ -16,7 +16,7 @@ source "$HOME/.local/share/zinit/zinit.git/zinit.zsh"
 
 export XDG_CONFIG_HOME="$HOME/.config"
 
-# secrete env
+# secret env
 source "$HOME/.env"
 
 # Created by `pipx` on 2024-10-04 07:23:34
@@ -190,6 +190,14 @@ function e() {
 # pandoc
 alias md2pdf='~/.local/bin/scripts/markdown_to_pdf.sh'
 
+# bun completions
+[ -s "/Users/yanchenxin/.bun/_bun" ] && source "/Users/yanchenxin/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
+
 if [ -n "${ZSH_DEBUGRC+1}" ]; then
     zprof
 fi
+
