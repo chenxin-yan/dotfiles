@@ -108,7 +108,7 @@ show_file_or_dir_preview="if [ -d {} ]; then eza --tree --color=always {} | head
 
 export FZF_CTRL_T_OPTS="--preview '$show_file_or_dir_preview'"
 export FZF_ALT_C_OPTS="--preview 'eza --tree --color=always {} | head -200'"
-export FZF_COMPLETION_TRIGGER="::"
+export FZF_COMPLETION_TRIGGER=";;"
 
 # Use rg with fzf
 alias rgi='~/.local/bin/scripts/rg_with_fzf.sh'
