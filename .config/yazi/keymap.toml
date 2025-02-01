@@ -222,6 +222,10 @@ keymap = [
   ], run = "cd ~/dev/", desc = "Go to the development directory" },
   { on = [
     "g",
+    "t",
+  ], run = "cd ~/tmp/", desc = "Go to the temporary directory" },
+  { on = [
+    "g",
     "p",
   ], run = "cd /Users/yanchenxin/Library/Mobile\\ Documents/com~apple~CloudDocs/PARA/Projects", desc = "Go to the project directory" },
   { on = [
