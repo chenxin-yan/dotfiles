@@ -37,30 +37,29 @@ stow .
    - install [tpm](https://github.com/tmux-plugins/tpm)
    - use `<prefix>I` to install plugins
 6. install git CLI: [lazygit](https://github.com/jesseduffield/lazygit)
-7. install docker CLI: [lazydocker](https://github.com/jesseduffield/lazydocker)
-8. install karabiner for key motification
-9. install editor: [neovim](https://neovim.io)
+7. install karabiner for key motification
+8. install editor: [neovim](https://neovim.io)
    - download my nvim [config](https://github.com/chenxin-yan/nvim) and follow setup instructions
    - (optional) download neovide as nvim GUI: [neovide](https://neovide.dev)
-10. install better ls: [Eza](https://github.com/eza-community/eza/blob/main/INSTALL.md)
-11. install better cd: [Zoxicde](https://github.com/ajeetdsouza/zoxide)
-12. install better cat: [Bat](https://github.com/sharkdp/bat)
-13. Install tiling window manager: [aerospace](https://github.com/nikitabobko/AeroSpace)
-14. install [sketchybar](https://felixkratz.github.io/SketchyBar/setup)
+9. install better ls: [Eza](https://github.com/eza-community/eza/blob/main/INSTALL.md)
+10. install better cd: [Zoxicde](https://github.com/ajeetdsouza/zoxide)
+11. install better cat: [Bat](https://github.com/sharkdp/bat)
+12. Install tiling window manager: [aerospace](https://github.com/nikitabobko/AeroSpace)
+13. install [sketchybar](https://felixkratz.github.io/SketchyBar/setup)
     - install [SF Symbals](https://developer.apple.com/sf-symbols/) for macos native symbals
     - install [sketchybar-app-font](https://github.com/kvndrsslr/sketchybar-app-font)
-15. install terminal file explorer: [yazi](https://yazi-rs.github.io)
+14. install terminal file explorer: [yazi](https://yazi-rs.github.io)
     - install clipboard CLI: [Clipboard](https://github.com/Slackadays/ClipBoard)
-16. install file converter: [pandoc](https://pandoc.org)
+15. install file converter: [pandoc](https://pandoc.org)
     - template for pdf generation: [Eisvogel](https://github.com/Wandmalfarbe/pandoc-latex-template)
     - install [BasicTex](https://tug.org/mactex/morepackages.html)
     - install [Better BibTex for Zotero](https://retorque.re/zotero-better-bibtex/)
     - install [wkhtmltopdf](https://wkhtmltopdf.org/downloads.html)
-17. Install GitHub CLI: [gh](https://cli.github.com)
+16. Install GitHub CLI: [gh](https://cli.github.com)
     - install [gh-dash](https://github.com/dlvhdr/gh-dash)
-18. Install Rest Client: [posting](https://posting.sh/guide/)
+17. Install Rest Client: [posting](https://posting.sh/guide/)
     - install [curlie](https://github.com/rs/curlie)
-19. (Optional) Install system info fetcher: [macchina](https://github.com/Macchina-CLI/macchina)
+18. (Optional) Install system info fetcher: [macchina](https://github.com/Macchina-CLI/macchina)
 
 ## Environmental Variables
 

@@ -11,6 +11,7 @@ mouse-hide-while-typing = true
 theme = catppuccin-mocha
 cursor-invert-fg-bg = true
 background-opacity = 0.95
+background-blur = 30
 window-theme = ghostty
 
 # Window
