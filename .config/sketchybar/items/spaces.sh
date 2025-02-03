@@ -1,6 +1,6 @@
 #!/bin/bash
 
-SPACE_ICONS=("~" "1:DEV" "2:WEB" "3:TODO" "4:NOTE" "5:CHAT" "6:WIP")
+SPACE_ICONS=("~" "1:DEV" "2:WEB" "3:TODO" "4:NOTE" "5:CHAT" "6:MEDIA")
 
 SPACE=(
   icon.padding_left=18
