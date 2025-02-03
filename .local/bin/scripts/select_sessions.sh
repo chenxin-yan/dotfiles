@@ -1,35 +1,31 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
-# Check if the project directory exists, if not, create it
-if [ ! -d "$PROJECT_DIR" ]; then
-  mkdir -p "$PROJECT_DIR"
-fi
-
-if [ ! -d "$DEV_DIR" ]; then
-  mkdir -p "$DEV_DIR"
-fi
+# Ensure directories exist
+mkdir -p "$PROJECT_DIR" "$DEV_DIR"
 
 ~/.local/bin/scripts/cleanup_sessions.sh
 
-# Use fd to select a top-level directory
-SELECTED_DIR=$(fd --type d -L --max-depth 1 . "$PROJECT_DIR" "$DEV_DIR" | fzf --prompt="Select a project to open: ")
+# Use fd to select a top-level directory in both dirs
+SELECTED_DIR=$(
+  fd --type d -L --max-depth 1 . "$PROJECT_DIR" "$DEV_DIR" \
+  | fzf --prompt="Select a project to open: "
+)
 
-# Check if a directory was selected
-if [ -n "$SELECTED_DIR" ]; then
-   # Extract the directory name
-  DIR_NAME=$(basename "$SELECTED_DIR")
-  # Sanitize the directory name for tmux session
-  SESSION_NAME=$(echo "$DIR_NAME" | tr '.' '_')
-
-  # Check if a tmux session with the sanitized directory name already exists
-  if tmux has-session -t "$SESSION_NAME" 2>/dev/null; then
-    echo "Attaching to existing tmux session: $SESSION_NAME"
-    tmux attach-session -t "$SESSION_NAME"
-  else
-    echo "Creating new tmux session: $SESSION_NAME"
-    tmux new-session -s "$SESSION_NAME" -c "$SELECTED_DIR"
-  fi
-else
+# Check if a directory was actually selected
+if [[ -z "$SELECTED_DIR" ]]; then
   echo "No directory selected."
+  exit 0
 fi
 
+# Derive tmux session name from the directory name
+DIR_NAME=$(basename "$SELECTED_DIR")
+SESSION_NAME="${DIR_NAME//./_}"  # replaces '.' with '_'
+
+# Create or attach to tmux session
+if tmux has-session -t "$SESSION_NAME" 2>/dev/null; then
+  echo "Attaching to existing tmux session: $SESSION_NAME"
+  tmux attach-session -t "$SESSION_NAME"
+else
+  echo "Creating new tmux session: $SESSION_NAME"
+  tmux new-session -s "$SESSION_NAME" -c "$SELECTED_DIR"
+fi

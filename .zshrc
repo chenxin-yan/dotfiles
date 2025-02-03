@@ -171,6 +171,7 @@ alias scu='~/.local/bin/scripts/cleanup_sessions.sh'
 alias cdv='cd $DEV_DIR'
 alias dvn='cd $DEV_DIR; mkdir'
 alias dvc='~/.local/bin/scripts/dev_clone.sh'
+alias dvrm='~/.local/bin/scripts/dev_remove.sh'
 
 alias cpj='cd $PROJECT_DIR'
 alias pjn='cd $PROJECT_DIR; mkdir'
