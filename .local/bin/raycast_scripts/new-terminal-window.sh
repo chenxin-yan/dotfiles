@@ -14,5 +14,4 @@
 # @raycast.author chenxin_yan
 # @raycast.authorURL https://raycast.com/chenxin_yan
 
-cd ~
-"/Applications/kitty.app/Contents/MacOS/kitty"
+/Applications/kitty.app/Contents/MacOS/kitty --single-instance --directory="$HOME"
