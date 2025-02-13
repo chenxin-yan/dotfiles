@@ -6,7 +6,7 @@ oh-my-posh prompt plugin for [Yazi](https://github.com/sxyazi/yazi) file manager
 
 ## Requirements
 
-- [Yazi](https://github.com/sxyazi/yazi) Need latest main branch code, Needs the latest commit. Or use [v 0.3.0](https://github.com/sxyazi/yazi/releases/tag/v0.3.0) release or newer.
+- [Yazi](https://github.com/sxyazi/yazi) Need latest main branch code, Needs the latest commit. Or use [v 0.4.0](https://github.com/sxyazi/yazi/releases/tag/v0.4.0) release or newer.
     Please use below command to install.
 ```cmd
   cargo install --locked --git https://github.com/sxyazi/yazi.git yazi-fm yazi-cli
@@ -37,6 +37,12 @@ Add this to `~/.config/yazi/init.lua`:
 
 ```lua
 require("omp"):setup()
+```
+
+If you want to define a custom config file, you can specify `config` argument for setup like this:
+
+```lua
+require("omp"):setup({ config = "/home/user/.config/omp.json" })
 ```
 
 Make sure you have https://github.com/jandedobbeleer/oh-my-posh installed and in your `PATH`.

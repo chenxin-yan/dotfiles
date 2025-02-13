@@ -1,6 +1,17 @@
-[plugin]
-deps = [
-  { use = "KKV9/compress", rev = "60b24af" },
-  { use = "orhnk/system-clipboard", rev = "7775a80" },
-  { use = "Lil-Dank/lazygit", rev = "c82794f" },
-]
+[[plugin.deps]]
+use = "KKV9/compress"
+rev = "60b24af"
+hash = "ee025be766240cc98e671754ac836da3"
+
+[[plugin.deps]]
+use = "orhnk/system-clipboard"
+rev = "7775a80"
+hash = "9b8f2573da54334b04747e51556040cc"
+
+[[plugin.deps]]
+use = "Lil-Dank/lazygit"
+rev = "9f924e3"
+hash = "2b0c33928986f126d5c5a4cac31a6b46"
+
+[flavor]
+deps = []
