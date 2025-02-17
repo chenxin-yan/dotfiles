@@ -57,8 +57,7 @@ stow .
     - install [wkhtmltopdf](https://wkhtmltopdf.org/downloads.html)
 16. Install GitHub CLI: [gh](https://cli.github.com)
     - install [gh-dash](https://github.com/dlvhdr/gh-dash)
-17. Install Rest Client: [posting](https://posting.sh/guide/)
-    - install [curlie](https://github.com/rs/curlie)
+17. install [curlie](https://github.com/rs/curlie)
 18. (Optional) Install system info fetcher: [macchina](https://github.com/Macchina-CLI/macchina)
 
 ## Environmental Variables
