@@ -198,7 +198,14 @@ alias md2pdf='~/.local/bin/scripts/markdown_to_pdf.sh'
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
 
+# pnpm
+export PNPM_HOME="/Users/yanchenxin/Library/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end
+
 if [ -n "${ZSH_DEBUGRC+1}" ]; then
     zprof
 fi
-
