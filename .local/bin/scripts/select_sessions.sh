@@ -14,7 +14,7 @@ SELECTED_DIR=$(
 # Check if a directory was actually selected
 if [[ -z "$SELECTED_DIR" ]]; then
   echo "No directory selected."
-  exit 0
+  return
 fi
 
 # Derive tmux session name from the directory name
