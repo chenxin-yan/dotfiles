@@ -141,6 +141,7 @@ alias cat='bat'
 
 # == aliases ==
 alias G='lazygit'
+alias dk='lazydocker'
 alias v='nvim'
 alias Leet='nvim Leetcode.nvim'
 alias ovo='Macchina'
