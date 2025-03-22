@@ -168,10 +168,6 @@ alt-ctrl-l = ['join-with right', 'mode main']
 # open app in specific workspace
 
 [[on-window-detected]]
-if.app-id = 'com.apple.Music'
-run = "move-node-to-workspace 0"
-
-[[on-window-detected]]
 if.app-id = 'com.apple.mail'
 run = "move-node-to-workspace 0"
 
