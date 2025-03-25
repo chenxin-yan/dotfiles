@@ -152,12 +152,8 @@ alias chrome='open -a "Google Chrome"'
 
 alias fzg='~/.local/bin/scripts/grep_current_dir.sh'
 
-# tmux alias
-alias ta='tmux attach'
-alias ts='tmux new-session -s'
-alias tl='tmux list-sessions'
-alias tksv='tmux kill-server'
-alias tkss='tmux kill-session -t'
+# zellij alias
+alias z=zellij
 
 # == Scripts ==
 # Obsidian

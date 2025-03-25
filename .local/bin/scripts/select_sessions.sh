@@ -17,15 +17,11 @@ if [[ -z "$SELECTED_DIR" ]]; then
   return
 fi
 
-# Derive tmux session name from the directory name
+# Derive zellij session name from the directory name
 DIR_NAME=$(basename "$SELECTED_DIR")
 SESSION_NAME="${DIR_NAME//./_}"  # replaces '.' with '_'
 
-# Create or attach to tmux session
-if tmux has-session -t "$SESSION_NAME" 2>/dev/null; then
-  echo "Attaching to existing tmux session: $SESSION_NAME"
-  tmux attach-session -t "$SESSION_NAME"
-else
-  echo "Creating new tmux session: $SESSION_NAME"
-  tmux new-session -s "$SESSION_NAME" -c "$SELECTED_DIR"
-fi
+# With attach_to_session=true, zellij will automatically attach to an existing session
+# or create a new one if it doesn't exist
+echo "Opening zellij session: $SESSION_NAME"
+(cd "$SELECTED_DIR" && zellij attach --create "$SESSION_NAME")
