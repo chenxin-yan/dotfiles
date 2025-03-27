@@ -53,10 +53,6 @@ keybinds clear-defaults=true {
     scroll {
         bind "e" { EditScrollback; SwitchToMode "locked"; }
         bind "f" { SwitchToMode "entersearch"; SearchInput 0; }
-        bind "Ctrl h" { MoveFocus "left"; SwitchToMode "locked"; }
-        bind "Ctrl j" { MoveFocus "down"; SwitchToMode "locked"; }
-        bind "Ctrl k" { MoveFocus "up"; SwitchToMode "locked"; }
-        bind "Ctrl l" { MoveFocus "right"; SwitchToMode "locked"; }
         bind "s" { SwitchToMode "normal"; }
     }
     search {
@@ -112,10 +108,10 @@ keybinds clear-defaults=true {
         bind "7" { GoToTab 7; SwitchToMode "locked"; }
         bind "8" { GoToTab 8; SwitchToMode "locked"; }
         bind "9" { GoToTab 9; SwitchToMode "locked"; }
-        bind "Ctrl h" { MoveFocus "left"; }
-        bind "Ctrl j" { MoveFocus "down"; }
-        bind "Ctrl k" { MoveFocus "up"; }
-        bind "Ctrl l" { MoveFocus "right"; }
+        bind "h" { MoveFocus "left"; }
+        bind "j" { MoveFocus "down"; }
+        bind "k" { MoveFocus "up"; }
+        bind "l" { MoveFocus "right"; }
     }
     shared_except "locked" "entersearch" {
         bind "enter" { SwitchToMode "locked"; }
