@@ -5,13 +5,13 @@ hash = "ee025be766240cc98e671754ac836da3"
 
 [[plugin.deps]]
 use = "orhnk/system-clipboard"
-rev = "7775a80"
+rev = "efb8f03"
 hash = "9b8f2573da54334b04747e51556040cc"
 
 [[plugin.deps]]
 use = "Lil-Dank/lazygit"
-rev = "9f924e3"
-hash = "2b0c33928986f126d5c5a4cac31a6b46"
+rev = "7a08a09"
+hash = "a1fa2b3e1826c3a34804ea8c548e9f80"
 
 [flavor]
 deps = []
