@@ -33,9 +33,7 @@ stow .
 4. install fuzzy finder: [fzf](https://github.com/junegunn/fzf)
    - install [fd](https://github.com/sharkdp/fd) to replace `find`
    - install [ripgrep](https://github.com/BurntSushi/ripgrep?tab=readme-ov-file#installation)
-5. install session manager: [tmux](https://github.com/tmux/tmux)
-   - install [tpm](https://github.com/tmux-plugins/tpm)
-   - use `<prefix>I` to install plugins
+5. install session manager: [zellij](https://zellij.dev/)
 6. install git TUI: [lazygit](https://github.com/jesseduffield/lazygit)
 7. install docker TUI: [lazydocker](https://github.com/jesseduffield/lazydocker)
 8. install karabiner for key motification

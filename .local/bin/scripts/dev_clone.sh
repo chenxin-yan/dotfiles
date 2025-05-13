@@ -17,21 +17,11 @@ fi
 # Get the repository name from the URL
 REPO_NAME=$(basename -s .git "$REPO_URL")
 
-# Prompt for bare clone
-read -p "Do you want to create a bare clone? [y/N]: " BARE_CLONE
-BARE_FLAG=""
-BARE_CLONE=$(echo "$BARE_CLONE" | tr '[:upper:]' '[:lower:]')
-if [[ "$BARE_CLONE" == "y" || "$BARE_CLONE" == "yes" ]]; then
-    BARE_FLAG="--bare"
-    # Add .git suffix for bare repositories
-    REPO_NAME="${REPO_NAME}.git"
-fi
-
 # Prompt the user for symlink creation
 read -p "Do you want to create a symlink in $DEV_DIR and clone to the current directory? [y/N]: " CREATE_SYMLINK
 if [ "$CREATE_SYMLINK" == "y" ]; then
   # Clone the repository into the current directory
-  git clone $BARE_FLAG "$REPO_URL" "$REPO_NAME"
+  git clone "$REPO_URL" "$REPO_NAME"
 
   # Check if the clone was successful
   if [ $? -eq 0 ]; then
@@ -45,7 +35,7 @@ if [ "$CREATE_SYMLINK" == "y" ]; then
 else
   # Clone the repository into the project directory
   cd "$DEV_DIR"
-  git clone $BARE_FLAG "$REPO_URL"
+  git clone "$REPO_URL"
 
   # Check if the clone was successful
   if [ $? -eq 0 ]; then
@@ -55,3 +45,4 @@ else
     exit 1
   fi
 fi
+
