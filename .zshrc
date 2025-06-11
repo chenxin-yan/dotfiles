@@ -219,3 +219,6 @@ esac
 if [ -n "${ZSH_DEBUGRC+1}" ]; then
     zprof
 fi
+
+# Claude Code
+alias claude="/Users/yanchenxin/.claude/local/claude"

@@ -57,7 +57,8 @@ stow .
 17. Install GitHub CLI: [gh](https://cli.github.com)
     - install [gh-dash](https://github.com/dlvhdr/gh-dash)
 18. install [curlie](https://github.com/rs/curlie)
-19. (Optional) Install system info fetcher: [macchina](https://github.com/Macchina-CLI/macchina)
+19. install database management: [rainfrog](https://github.com/achristmascarl/rainfrog)
+20. (Optional) Install system info fetcher: [macchina](https://github.com/Macchina-CLI/macchina)
 
 ## Environmental Variables
 

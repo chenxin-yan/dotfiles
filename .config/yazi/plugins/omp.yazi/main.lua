@@ -37,7 +37,7 @@ return {
 
 	entry = function(_, job)
 		local output = Command("oh-my-posh")
-			:args({
+			:arg({
 				"print",
 				"primary",
 				"--no-status",

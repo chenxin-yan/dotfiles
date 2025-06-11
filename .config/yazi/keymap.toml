@@ -2,7 +2,7 @@
 # If you encounter any issues, please make an issue at https://github.com/yazi-rs/schemas.
 # "$schema" = "https://yazi-rs.github.io/schemas/keymap.json"
 
-[manager]
+[mgr]
 
 keymap = [
   { on = "<Esc>", run = "escape", desc = "Exit visual mode, clear selected, or cancel search" },
@@ -266,29 +266,29 @@ keymap = [
   ], run = "help", desc = "Open help" },
 ]
 
-[[manager.prepend_keymap]]
+[[mgr.prepend_keymap]]
 on = ["g", "r"]
 run = '''
   shell 'ya emit cd --str "$(git rev-parse --show-toplevel)"' --confirm
 '''
 desc = "Go back to root of Git repo"
 
-[[manager.prepend_keymap]]
+[[mgr.prepend_keymap]]
 on = "<C-p>"
 run = '''
   shell 'qlmanage -p "$@"' --confirm
 '''
 
-[[manager.prepend_keymap]]
+[[mgr.prepend_keymap]]
 on = "<C-y>"
 run = ["plugin system-clipboard"]
 
-[[manager.prepend_keymap]]
+[[mgr.prepend_keymap]]
 on = "<C-z>"
 run = "plugin compress"
 desc = "Archive selected files"
 
-[[manager.prepend_keymap]]
+[[mgr.prepend_keymap]]
 on = ['g', "G"]
 run = "plugin lazygit"
 desc = "run lazygit"
