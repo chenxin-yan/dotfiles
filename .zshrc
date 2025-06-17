@@ -41,6 +41,9 @@ zinit light zsh-users/zsh-completions
 zinit light zsh-users/zsh-autosuggestions
 bindkey '^y' autosuggest-accept
 
+# fzf search flags
+zinit light Aloxaf/fzf-tab
+
 # History config
 HISTSIZE=5000
 HISTFILE=~/.zsh_history
@@ -140,7 +143,6 @@ eval "$(zoxide init --cmd cd zsh)"
 alias cat='bat'
 
 # == aliases ==
-alias G='lazygit'
 alias dk='lazydocker'
 alias v='nvim'
 alias Leet='nvim Leetcode.nvim'
@@ -186,7 +188,7 @@ function e() {
 }
 
 # lazygit
-lg()
+G()
 {
     export LAZYGIT_NEW_DIR_FILE=~/.lazygit/newdir
 
@@ -219,6 +221,3 @@ esac
 if [ -n "${ZSH_DEBUGRC+1}" ]; then
     zprof
 fi
-
-# Claude Code
-alias claude="/Users/yanchenxin/.claude/local/claude"
