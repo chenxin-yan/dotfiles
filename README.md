@@ -58,7 +58,8 @@ stow .
     - install [gh-dash](https://github.com/dlvhdr/gh-dash)
 18. install [curlie](https://github.com/rs/curlie)
 19. install database management: [rainfrog](https://github.com/achristmascarl/rainfrog)
-20. (Optional) Install system info fetcher: [macchina](https://github.com/Macchina-CLI/macchina)
+20. install Rest Client: [posting](https://posting.sh/guide/#installation)
+21. (Optional) Install system info fetcher: [macchina](https://github.com/Macchina-CLI/macchina)
 
 ## Environmental Variables
 

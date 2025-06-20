@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# Prune posting collections for non-existent projects
+~/.local/bin/scripts/posting_collections_prune.sh
+
 # Get all active zellij sessions without formatting
 zellij list-sessions --no-formatting | while read -r session_info; do
   # Extract just the session name from the output and strip ANSI color codes
