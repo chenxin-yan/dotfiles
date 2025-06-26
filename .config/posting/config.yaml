@@ -1,4 +1,0 @@
-theme: catppuccin-mocha
-layout: horizontal
-response:
-  prettify_json: true

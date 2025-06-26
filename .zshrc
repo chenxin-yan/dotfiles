@@ -203,9 +203,6 @@ G()
 # pandoc
 alias md2pdf='~/.local/bin/scripts/markdown_to_pdf.sh'
 
-# posting
-alias pst='~/.local/bin/scripts/posting_load.sh'
-
 # bun completions
 [ -s "/Users/yanchenxin/.bun/_bun" ] && source "/Users/yanchenxin/.bun/_bun"
 
