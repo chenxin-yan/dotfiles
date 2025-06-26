@@ -14,4 +14,4 @@
 # @raycast.author chenxin_yan
 # @raycast.authorURL https://raycast.com/chenxin_yan
 
-/Applications/kitty.app/Contents/MacOS/kitty --single-instance --directory="$HOME"
+open -n /Applications/Ghostty.app

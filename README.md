@@ -27,7 +27,7 @@ stow .
 
 ## Setup & configuration
 
-1. install terminal emulation: [kitty](https://sw.kovidgoyal.net/kitty/binary/)
+1. install terminal emulation: [ghostty](https://ghostty.org/docs/install/binary)
 2. install Plugin manager: [zinit](https://github.com/zdharma-continuum/zinit)
 3. install prompt theme engine: [Oh My Posh](https://ohmyposh.dev/docs/installation/macos)
 4. install fuzzy finder: [fzf](https://github.com/junegunn/fzf)

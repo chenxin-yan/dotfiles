@@ -1,5 +1,5 @@
 # Fonts
-font-family = "JetBrainsMono Nerd Font"
+font-family = "JetBrainsMono Nerd Font Me"
 font-size = 14
 adjust-underline-position = 4
 
@@ -19,7 +19,10 @@ gtk-single-instance = true
 gtk-tabs-location = bottom
 window-padding-y = 2,0
 window-padding-balance = true
+macos-titlebar-style = hidden
 
 # Other
 copy-on-select = clipboard
 shell-integration-features = cursor,sudo,no-title
+
+keybind = shift+enter=text:\n
