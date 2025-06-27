@@ -20,6 +20,7 @@ gtk-tabs-location = bottom
 window-padding-y = 2,0
 window-padding-balance = true
 macos-titlebar-style = hidden
+quit-after-last-window-closed = true
 
 # Other
 copy-on-select = clipboard

@@ -29,7 +29,7 @@ keybinds clear-defaults=true {
     }
     resize {
         bind "-" { Resize "Decrease"; }
-        bind "=" { Resize "Increase"; }
+        bind "+" { Resize "Increase"; }
         bind "H" { Resize "Decrease left"; }
         bind "J" { Resize "Decrease down"; }
         bind "K" { Resize "Decrease up"; }
@@ -95,7 +95,7 @@ keybinds clear-defaults=true {
     }
     shared_among "normal" {
         bind "-" { Resize "Decrease"; }
-        bind "=" { Resize "Increase"; }
+        bind "+" { Resize "Increase"; }
         bind "d" { Detach; }
         bind "_" { NewPane "down"; SwitchToMode "locked"; }
         bind "|" { NewPane "right"; SwitchToMode "locked"; }

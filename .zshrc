@@ -41,9 +41,6 @@ zinit light zsh-users/zsh-completions
 zinit light zsh-users/zsh-autosuggestions
 bindkey '^y' autosuggest-accept
 
-# fzf search flags
-zinit light Aloxaf/fzf-tab
-
 # History config
 HISTSIZE=5000
 HISTFILE=~/.zsh_history
@@ -199,6 +196,9 @@ G()
             rm -f $LAZYGIT_NEW_DIR_FILE > /dev/null
     fi
 }
+
+# lazyjj
+alias J='lazyjj'
 
 # pandoc
 alias md2pdf='~/.local/bin/scripts/markdown_to_pdf.sh'
