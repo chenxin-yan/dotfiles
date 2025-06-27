@@ -139,6 +139,12 @@ eval "$(zoxide init --cmd cd zsh)"
 # -- Bat (better cat) --
 alias cat='bat'
 
+# -- carapace (better flag completion)
+export CARAPACE_BRIDGES='zsh,fish,bash,inshellisense' 
+zstyle ':completion:*' format $'\e[2;37mCompleting %d\e[m'
+source <(carapace _carapace)
+
+
 # == aliases ==
 alias dk='lazydocker'
 alias v='nvim'
