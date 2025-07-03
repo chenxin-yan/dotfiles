@@ -203,9 +203,6 @@ G()
     fi
 }
 
-# lazyjj
-alias J='lazyjj'
-
 # pandoc
 alias md2pdf='~/.local/bin/scripts/markdown_to_pdf.sh'
 

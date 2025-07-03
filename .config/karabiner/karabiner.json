@@ -2,6 +2,7 @@
     "profiles": [
         {
             "complex_modifications": {
+                "parameters": { "basic.to_if_held_down_threshold_milliseconds": 160 },
                 "rules": [
                     {
                         "description": "Tab to Tab and Alt when hold",
@@ -175,6 +176,16 @@
                     }
                 ]
             },
+            "devices": [
+                {
+                    "identifiers": {
+                        "is_keyboard": true,
+                        "product_id": 6505,
+                        "vendor_id": 12951
+                    },
+                    "ignore": true
+                }
+            ],
             "name": "Default profile",
             "selected": true,
             "virtual_hid_keyboard": { "keyboard_type_v2": "ansi" }
