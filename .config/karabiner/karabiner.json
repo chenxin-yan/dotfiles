@@ -19,7 +19,7 @@
                         ]
                     },
                     {
-                        "description": "Hyper Key: Right command → left control + left option + left command ",
+                        "description": "Hyper Key: Right command → left control + left option + left shift ",
                         "manipulators": [
                             {
                                 "from": {
@@ -35,7 +35,7 @@
                                     },
                                     {
                                         "key_code": "left_control",
-                                        "modifiers": ["left_option", "left_command"]
+                                        "modifiers": ["left_option", "left_shift"]
                                     }
                                 ],
                                 "to_after_key_up": [
