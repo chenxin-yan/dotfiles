@@ -6,6 +6,7 @@
                 "rules": [
                     {
                         "description": "Tab to Tab and Alt when hold",
+                        "enabled": false,
                         "manipulators": [
                             {
                                 "from": {

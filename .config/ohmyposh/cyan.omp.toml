@@ -51,6 +51,7 @@ final_space = true
       revert_icon = ' '
       tag_icon = ' '
 
+
 [[blocks]]
   type = 'rprompt'
   overflow = 'hidden'
@@ -65,6 +66,12 @@ final_space = true
     type = 'project'
     template = ' {{ if .Error }}{{ .Error }}{{ else }}{{ if .Version }} {{.Version}}{{ end }} {{ if .Name }}{{ .Name }}{{ end }}{{ end }} '
     foreground = 'p:blue'
+    style = 'plain'
+
+  [[blocks.segments]]
+    template = '(nix-{{ .Type }})'
+    foreground = 'p:blue'
+    type = 'nix-shell'
     style = 'plain'
 
 [[blocks]]

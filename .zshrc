@@ -131,7 +131,7 @@ _fzf_comprun() {
 # -- Eza (better ls) config --
 alias ls="eza --color=always --long --git --no-filesize --icons=always --no-time --no-user --no-permissions"
 alias ll="eza -ah --color=always --long --git --no-filesize --icons=always --no-time --no-user --no-permissions"
-alias tree="eza -TL 2 --color=always --icons=always --git"
+alias tree="eza -TL 3 --color=always --icons=always --git"
 
 # -- Zoxide (better cd) config -- 
 eval "$(zoxide init --cmd cd zsh)"
@@ -220,6 +220,13 @@ case ":$PATH:" in
   *) export PATH="$PNPM_HOME:$PATH" ;;
 esac
 # pnpm end
+
+# Generated for envman. Do not edit.
+[ -s "$HOME/.config/envman/load.sh" ] && source "$HOME/.config/envman/load.sh"
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="$HOME/.sdkman"
+[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
 
 if [ -n "${ZSH_DEBUGRC+1}" ]; then
     zprof

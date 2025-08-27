@@ -81,13 +81,11 @@ keybinds clear-defaults=true {
         }
     }
     shared_among "normal" "locked" {
-        bind "Alt [" { PreviousSwapLayout; }
-        bind "Alt ]" { NextSwapLayout; }
         bind "Alt f" { ToggleFloatingPanes; }
-        bind "Alt i" { GoToPreviousTab; }
-        bind "Alt o" { GoToNextTab; }
-        bind "Alt I" { MoveTab "left"; }
-        bind "Alt O" { MoveTab "right"; }
+        bind "Alt [" { GoToPreviousTab; }
+        bind "Alt ]" { GoToNextTab; }
+        bind "Alt }" { MoveTab "left"; }
+        bind "Alt {" { MoveTab "right"; }
     }
     shared_except "locked" "renametab" "renamepane" {
         bind "Ctrl s" { SwitchToMode "locked"; }
@@ -325,7 +323,7 @@ session_serialization true
 //   - true
 //   - false (default)
 // 
-serialize_pane_viewport true
+// serialize_pane_viewport true
  
 // Scrollback lines to serialize along with the pane viewport when serializing sessions, 0
 // defaults to the scrollback size. If this number is higher than the scrollback size, it will
